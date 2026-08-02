@@ -1,0 +1,77 @@
+{
+  "scope": "procedural_qualification_validation",
+  "budget": "matched_seed_architecture_epochs_optimizer",
+  "selected_loss": "bce_dice",
+  "candidates": [
+    {
+      "loss_name": "bce",
+      "best_epoch": 8,
+      "best_validation_loss": 0.568798,
+      "pixel_metrics": {
+        "macro_dice": 0.885962,
+        "macro_iou": 0.853873,
+        "macro_precision": 0.940487,
+        "macro_recall": 0.909251,
+        "pr_auc": 0.803375
+      },
+      "piece_metrics": {
+        "true_positive": 4,
+        "true_negative": 8,
+        "false_positive": 0,
+        "false_negative": 0,
+        "defect_precision": 1.0,
+        "defect_recall": 1.0,
+        "defect_f1": 1.0,
+        "false_reject_rate": 0.0,
+        "false_accept_rate": 0.0
+      }
+    },
+    {
+      "loss_name": "dice",
+      "best_epoch": 8,
+      "best_validation_loss": 0.973568,
+      "pixel_metrics": {
+        "macro_dice": 0.931965,
+        "macro_iou": 0.891543,
+        "macro_precision": 0.893079,
+        "macro_recall": 0.997498,
+        "pr_auc": 0.947044
+      },
+      "piece_metrics": {
+        "true_positive": 4,
+        "true_negative": 8,
+        "false_positive": 0,
+        "false_negative": 0,
+        "defect_precision": 1.0,
+        "defect_recall": 1.0,
+        "defect_f1": 1.0,
+        "false_reject_rate": 0.0,
+        "false_accept_rate": 0.0
+      }
+    },
+    {
+      "loss_name": "bce_dice",
+      "best_epoch": 8,
+      "best_validation_loss": 0.756044,
+      "pixel_metrics": {
+        "macro_dice": 0.947943,
+        "macro_iou": 0.911008,
+        "macro_precision": 0.932801,
+        "macro_recall": 0.971197,
+        "pr_auc": 0.929261
+      },
+      "piece_metrics": {
+        "true_positive": 4,
+        "true_negative": 8,
+        "false_positive": 0,
+        "false_negative": 0,
+        "defect_precision": 1.0,
+        "defect_recall": 1.0,
+        "defect_f1": 1.0,
+        "false_reject_rate": 0.0,
+        "false_accept_rate": 0.0
+      }
+    }
+  ],
+  "warning": "Qualification evidence is not KSDD2 benchmark evidence."
+}

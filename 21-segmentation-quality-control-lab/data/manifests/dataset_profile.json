@@ -1,0 +1,10 @@
+{
+  "profile": "procedural_qualification",
+  "seed": 21021,
+  "images": 44,
+  "defective_images": 16,
+  "clean_images": 28,
+  "official_dataset": "NOT_ACQUIRED",
+  "official_test": "LOCKED_NOT_ACQUIRED",
+  "warning": "Procedural evidence is not KSDD2 benchmark evidence."
+}

@@ -1,0 +1,6 @@
+{
+  "bundle_path": "models/bundles/surface-quality-control-v1.json",
+  "bundle_sha256": "a1c6a0fe9d0b2cd800313957d2c7e86b5671b3b943d58ca084122dd6f533db60",
+  "checkpoint_sha256": "64e9e770a7ca2c4054a857b4a417e66f386aec907e51a96bcb75aac5cf88b904",
+  "model_version": "small-unet-qualification-v1"
+}

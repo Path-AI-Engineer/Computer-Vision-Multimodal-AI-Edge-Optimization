@@ -1,0 +1,5 @@
+{
+  "review_area_ratio": 0.001,
+  "reject_area_ratio": 0.012,
+  "minimum_component_area_px": 6
+}

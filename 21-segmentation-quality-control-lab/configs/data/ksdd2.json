@@ -1,0 +1,11 @@
+{
+  "dataset": "Kolektor Surface-Defect Dataset 2",
+  "source_url": "https://www.vicos.si/resources/kolektorsdd2/",
+  "official_defective_images": 356,
+  "official_clean_images": 2979,
+  "split_policy": "preserve_official_split",
+  "test_policy": "LOCKED_NOT_ACQUIRED",
+  "mask_values": [0, 1],
+  "label_interpolation": "nearest"
+}
+

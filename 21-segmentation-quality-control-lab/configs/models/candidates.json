@@ -1,0 +1,10 @@
+{
+  "candidates": [
+    {"id": "always-clean", "family": "decision_baseline", "status": "executed"},
+    {"id": "opencv-morphology", "family": "pixel_baseline", "status": "executed"},
+    {"id": "small-unet", "family": "encoder_decoder", "status": "executed"},
+    {"id": "pretrained-unet", "family": "transfer_learning", "status": "not_run"},
+    {"id": "deeplabv3", "family": "reference", "status": "not_run"}
+  ]
+}
+

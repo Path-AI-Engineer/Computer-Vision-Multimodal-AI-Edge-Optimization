@@ -1,0 +1,62 @@
+[
+  {
+    "kernel_size": 3,
+    "pixel_metrics": {
+      "macro_dice": 0.883013,
+      "macro_iou": 0.868268,
+      "macro_precision": 0.916667,
+      "macro_recall": 0.868268
+    },
+    "piece_metrics": {
+      "true_positive": 3,
+      "true_negative": 8,
+      "false_positive": 0,
+      "false_negative": 1,
+      "defect_precision": 1.0,
+      "defect_recall": 0.75,
+      "defect_f1": 0.857143,
+      "false_reject_rate": 0.0,
+      "false_accept_rate": 0.25
+    }
+  },
+  {
+    "kernel_size": 5,
+    "pixel_metrics": {
+      "macro_dice": 0.666667,
+      "macro_iou": 0.666667,
+      "macro_precision": 0.666667,
+      "macro_recall": 0.666667
+    },
+    "piece_metrics": {
+      "true_positive": 0,
+      "true_negative": 8,
+      "false_positive": 0,
+      "false_negative": 4,
+      "defect_precision": 1.0,
+      "defect_recall": 0.0,
+      "defect_f1": 0.0,
+      "false_reject_rate": 0.0,
+      "false_accept_rate": 1.0
+    }
+  },
+  {
+    "kernel_size": 7,
+    "pixel_metrics": {
+      "macro_dice": 0.666667,
+      "macro_iou": 0.666667,
+      "macro_precision": 0.666667,
+      "macro_recall": 0.666667
+    },
+    "piece_metrics": {
+      "true_positive": 0,
+      "true_negative": 8,
+      "false_positive": 0,
+      "false_negative": 4,
+      "defect_precision": 1.0,
+      "defect_recall": 0.0,
+      "defect_f1": 0.0,
+      "false_reject_rate": 0.0,
+      "false_accept_rate": 1.0
+    }
+  }
+]

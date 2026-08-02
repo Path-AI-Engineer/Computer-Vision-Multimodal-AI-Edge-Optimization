@@ -1,0 +1,20 @@
+services:
+  quality-control-lab:
+    build:
+      context: .
+      dockerfile: docker/production.Dockerfile
+    environment:
+      QUALITY_CONTROL_ROOT: /app
+      PORT: "8080"
+    ports:
+      - "8021:8080"
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/ready', timeout=2)
+      interval: 15s
+      timeout: 3s
+      retries: 4
+      start_period: 15s

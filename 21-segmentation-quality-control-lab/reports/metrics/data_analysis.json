@@ -1,0 +1,21 @@
+{
+  "profile": "procedural_qualification",
+  "images": 44,
+  "split_counts": {
+    "train": 24,
+    "validation": 12,
+    "showcase": 8
+  },
+  "defective_images": 16,
+  "clean_images": 28,
+  "clean_to_defect_ratio": 1.75,
+  "image_shapes": [
+    "96x144"
+  ],
+  "defect_area_ratio": {
+    "minimum": 0.00434028,
+    "median": 0.01472078,
+    "maximum": 0.03240741
+  },
+  "warning": "Procedural EDA is software evidence, not KSDD2 distribution evidence."
+}

@@ -1,0 +1,37 @@
+{
+  "profile": "procedural_qualification",
+  "selected_model": "small-unet",
+  "selected_model_version": "small-unet-qualification-v1",
+  "selection_split": "qualification_validation",
+  "official_test_status": "LOCKED_NOT_ACQUIRED",
+  "images": 12,
+  "defective_images": 4,
+  "clean_images": 8,
+  "pixel_threshold": 0.8,
+  "piece_threshold": 0.001,
+  "pixel_metrics": {
+    "macro_dice": 0.947943,
+    "macro_iou": 0.911008,
+    "macro_precision": 0.932801,
+    "macro_recall": 0.971197,
+    "pr_auc": 0.929261
+  },
+  "piece_metrics": {
+    "true_positive": 4,
+    "true_negative": 8,
+    "false_positive": 0,
+    "false_negative": 0,
+    "defect_precision": 1.0,
+    "defect_recall": 1.0,
+    "defect_f1": 1.0,
+    "false_reject_rate": 0.0,
+    "false_accept_rate": 0.0
+  },
+  "latency": {
+    "p50_ms": 11.084,
+    "p95_ms": 11.906,
+    "environment": "local_cpu_qualification",
+    "warning": "Local qualification latency is not a production service SLA."
+  },
+  "warning": "Procedural qualification results are not KSDD2 benchmark results."
+}

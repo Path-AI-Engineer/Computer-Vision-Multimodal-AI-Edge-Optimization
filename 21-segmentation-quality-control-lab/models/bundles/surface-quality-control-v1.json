@@ -1,0 +1,26 @@
+{
+  "bundle_version": "surface-quality-control-bundle-v1",
+  "model_id": "small-unet",
+  "model_version": "small-unet-qualification-v1",
+  "checkpoint_path": "models/checkpoints/small-unet-bce_dice-qualification.pt",
+  "checkpoint_sha256": "64e9e770a7ca2c4054a857b4a417e66f386aec907e51a96bcb75aac5cf88b904",
+  "input_size": [
+    64,
+    96
+  ],
+  "normalization": {
+    "mean": 150.0,
+    "std": 45.0
+  },
+  "pixel_threshold": 0.8,
+  "inspection_policy": {
+    "review_area_ratio": 0.001,
+    "reject_area_ratio": 0.012,
+    "minimum_component_area_px": 6
+  },
+  "threshold_selection_split": "qualification_validation",
+  "evidence_profile": "procedural_qualification",
+  "official_dataset_status": "NOT_ACQUIRED",
+  "official_test_status": "LOCKED_NOT_ACQUIRED",
+  "created_from_run": "p21-qualification-v1"
+}

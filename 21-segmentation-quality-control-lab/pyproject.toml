@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "surface-quality-control-lab"
+version = "1.0.0"
+description = "Evidence-first surface-defect segmentation and inspection laboratory."
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.139.0",
+  "numpy==1.26.4",
+  "opencv-python-headless==4.10.0.84",
+  "pillow==10.4.0",
+  "pydantic==2.13.4",
+  "python-multipart==0.0.20",
+  "scipy==1.13.1",
+  "torch==2.9.0",
+  "uvicorn[standard]==0.51.0",
+]
+
+[project.optional-dependencies]
+dev = ["httpx==0.28.1", "pytest==9.0.2", "ruff==0.14.10"]
+research = ["torchvision==0.24.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["backend*", "ml*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 96
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+

@@ -1,0 +1,58 @@
+{
+  "loss_name": "bce_dice",
+  "checkpoint_path": "models/checkpoints/small-unet-bce_dice-qualification.pt",
+  "best_epoch": 8,
+  "best_validation_loss": 0.756044,
+  "training_seconds": 2.4893,
+  "parameters": 29481,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.966031,
+      "validation_loss": 0.919725,
+      "learning_rate": 0.003
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.90788,
+      "validation_loss": 0.909833,
+      "learning_rate": 0.003
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.861068,
+      "validation_loss": 0.889561,
+      "learning_rate": 0.003
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.847786,
+      "validation_loss": 0.854779,
+      "learning_rate": 0.003
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.820827,
+      "validation_loss": 0.818249,
+      "learning_rate": 0.003
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.794423,
+      "validation_loss": 0.791132,
+      "learning_rate": 0.003
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.776381,
+      "validation_loss": 0.775818,
+      "learning_rate": 0.003
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.762026,
+      "validation_loss": 0.756044,
+      "learning_rate": 0.003
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "selection_scope": "procedural_qualification_validation",
+  "candidates": [
+    {
+      "model_id": "always-clean",
+      "status": "executed",
+      "pixel_metrics": {
+        "macro_dice": 0.666667,
+        "macro_iou": 0.666667,
+        "macro_precision": 0.666667,
+        "macro_recall": 0.666667
+      },
+      "piece_metrics": {
+        "true_positive": 0,
+        "true_negative": 8,
+        "false_positive": 0,
+        "false_negative": 4,
+        "defect_precision": 1.0,
+        "defect_recall": 0.0,
+        "defect_f1": 0.0,
+        "false_reject_rate": 0.0,
+        "false_accept_rate": 1.0
+      }
+    },
+    {
+      "model_id": "opencv-morphology",
+      "status": "executed",
+      "pixel_metrics": {
+        "macro_dice": 0.883013,
+        "macro_iou": 0.868268,
+        "macro_precision": 0.916667,
+        "macro_recall": 0.868268
+      },
+      "piece_metrics": {
+        "true_positive": 3,
+        "true_negative": 8,
+        "false_positive": 0,
+        "false_negative": 1,
+        "defect_precision": 1.0,
+        "defect_recall": 0.75,
+        "defect_f1": 0.857143,
+        "false_reject_rate": 0.0,
+        "false_accept_rate": 0.25
+      }
+    },
+    {
+      "model_id": "small-unet",
+      "status": "executed",
+      "selected": true,
+      "pixel_metrics": {
+        "macro_dice": 0.947943,
+        "macro_iou": 0.911008,
+        "macro_precision": 0.932801,
+        "macro_recall": 0.971197,
+        "pr_auc": 0.929261
+      },
+      "piece_metrics": {
+        "true_positive": 4,
+        "true_negative": 8,
+        "false_positive": 0,
+        "false_negative": 0,
+        "defect_precision": 1.0,
+        "defect_recall": 1.0,
+        "defect_f1": 1.0,
+        "false_reject_rate": 0.0,
+        "false_accept_rate": 0.0
+      }
+    },
+    {
+      "model_id": "pretrained-unet",
+      "status": "NOT_RUN",
+      "reason": "KSDD2 train/validation data and transfer-learning budget are not available."
+    },
+    {
+      "model_id": "deeplabv3",
+      "status": "NOT_RUN",
+      "reason": "Optional reference remains excluded until the official split is acquired."
+    }
+  ]
+}

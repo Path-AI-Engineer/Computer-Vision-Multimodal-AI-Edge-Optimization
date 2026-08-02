@@ -1,0 +1,10 @@
+{
+  "pixel_threshold_candidates": [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8],
+  "pixel_threshold_selection_split": "qualification_validation",
+  "piece_review_threshold": 0.001,
+  "piece_reject_threshold": 0.012,
+  "minimum_component_area_px": 6,
+  "official_test_status": "LOCKED_NOT_ACQUIRED",
+  "macro_images_include_clean": true
+}
+

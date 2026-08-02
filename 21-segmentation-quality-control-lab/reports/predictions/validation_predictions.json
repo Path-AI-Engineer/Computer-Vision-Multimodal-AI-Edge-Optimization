@@ -1,0 +1,110 @@
+[
+  {
+    "sample_id": "surface-024",
+    "actual_defect": true,
+    "predicted_defect": true,
+    "decision": "REJECT",
+    "defect_area_px": 332,
+    "defect_area_ratio": 0.0240162,
+    "error_type": null
+  },
+  {
+    "sample_id": "surface-025",
+    "actual_defect": true,
+    "predicted_defect": true,
+    "decision": "REJECT",
+    "defect_area_px": 202,
+    "defect_area_ratio": 0.01461227,
+    "error_type": null
+  },
+  {
+    "sample_id": "surface-026",
+    "actual_defect": true,
+    "predicted_defect": true,
+    "decision": "REVIEW",
+    "defect_area_px": 79,
+    "defect_area_ratio": 0.0057147,
+    "error_type": null
+  },
+  {
+    "sample_id": "surface-027",
+    "actual_defect": true,
+    "predicted_defect": true,
+    "decision": "REJECT",
+    "defect_area_px": 494,
+    "defect_area_ratio": 0.03573495,
+    "error_type": null
+  },
+  {
+    "sample_id": "surface-028",
+    "actual_defect": false,
+    "predicted_defect": false,
+    "decision": "ACCEPT",
+    "defect_area_px": 0,
+    "defect_area_ratio": 0.0,
+    "error_type": null
+  },
+  {
+    "sample_id": "surface-029",
+    "actual_defect": false,
+    "predicted_defect": false,
+    "decision": "ACCEPT",
+    "defect_area_px": 0,
+    "defect_area_ratio": 0.0,
+    "error_type": null
+  },
+  {
+    "sample_id": "surface-030",
+    "actual_defect": false,
+    "predicted_defect": false,
+    "decision": "ACCEPT",
+    "defect_area_px": 0,
+    "defect_area_ratio": 0.0,
+    "error_type": null
+  },
+  {
+    "sample_id": "surface-031",
+    "actual_defect": false,
+    "predicted_defect": false,
+    "decision": "ACCEPT",
+    "defect_area_px": 0,
+    "defect_area_ratio": 0.0,
+    "error_type": null
+  },
+  {
+    "sample_id": "surface-032",
+    "actual_defect": false,
+    "predicted_defect": false,
+    "decision": "ACCEPT",
+    "defect_area_px": 0,
+    "defect_area_ratio": 0.0,
+    "error_type": null
+  },
+  {
+    "sample_id": "surface-033",
+    "actual_defect": false,
+    "predicted_defect": false,
+    "decision": "ACCEPT",
+    "defect_area_px": 0,
+    "defect_area_ratio": 0.0,
+    "error_type": null
+  },
+  {
+    "sample_id": "surface-034",
+    "actual_defect": false,
+    "predicted_defect": false,
+    "decision": "ACCEPT",
+    "defect_area_px": 0,
+    "defect_area_ratio": 0.0,
+    "error_type": null
+  },
+  {
+    "sample_id": "surface-035",
+    "actual_defect": false,
+    "predicted_defect": false,
+    "decision": "ACCEPT",
+    "defect_area_px": 0,
+    "defect_area_ratio": 0.0,
+    "error_type": null
+  }
+]

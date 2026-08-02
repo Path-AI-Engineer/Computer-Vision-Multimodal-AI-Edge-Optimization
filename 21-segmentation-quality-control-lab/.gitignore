@@ -1,0 +1,14 @@
+.venv/
+.venv-incomplete/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+data/raw/*
+!data/raw/.gitkeep
+reports/runs/*/checkpoints/
+models/checkpoints/small-unet-qualification.pt
+.env

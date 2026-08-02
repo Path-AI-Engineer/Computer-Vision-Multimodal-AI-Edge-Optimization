@@ -1,0 +1,1 @@
+"""Mask and overlay rendering."""
