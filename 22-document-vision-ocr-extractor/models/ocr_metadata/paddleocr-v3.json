@@ -1,0 +1,7 @@
+{
+  "adapter": "paddleocr-v3",
+  "status": "OPTIONAL_NOT_EXECUTED",
+  "purpose": "Real OCR for arbitrary single-page uploads",
+  "requirements": "requirements-ocr.txt",
+  "fallback_policy": "Fail explicitly; never fabricate OCR tokens"
+}

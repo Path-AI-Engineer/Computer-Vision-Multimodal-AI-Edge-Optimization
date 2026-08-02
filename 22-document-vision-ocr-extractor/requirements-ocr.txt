@@ -1,0 +1,3 @@
+# Optional runtime for arbitrary uploaded documents. Not required for the sealed fixture demo.
+paddleocr==3.0.3
+paddlepaddle==3.0.0

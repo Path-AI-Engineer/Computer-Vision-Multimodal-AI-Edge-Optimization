@@ -1,0 +1,11 @@
+{
+  "extractor": "layout-aware-v1",
+  "status": "QUALIFIED",
+  "fields": ["company", "date", "address", "total"],
+  "inputs": ["ocr_text", "ocr_confidence", "bounding_boxes", "reading_order"],
+  "limitations": [
+    "Rule-based English and Spanish receipt vocabulary",
+    "Single-page receipts only",
+    "Qualification fixtures are not an external benchmark"
+  ]
+}

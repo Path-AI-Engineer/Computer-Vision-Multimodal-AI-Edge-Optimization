@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "profiles": {
+    "original-v1": ["decode"],
+    "deskew-clahe-v1": ["grayscale", "median-denoise", "histogram-equalize", "deskew-check"],
+    "adaptive-threshold-v1": ["grayscale", "denoise", "adaptive-threshold"]
+  }
+}

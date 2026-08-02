@@ -234,7 +234,7 @@ Ejemplos:
 | 73-76  | `19-image-classification-api` | Clasificación fina, calibración, API y Studio visual |
 | 77-80  | `20-retail-shelf-object-detection`      | Detección densa, conteo visible, API y consola    |
 | 81-85  | `21-segmentation-quality-control-lab`   | Segmentación visual aplicada a control de calidad |
-| 86-89  | `22-video-understanding-basics-lab`     | Procesamiento y análisis básico de video          |
+| 86-89  | `22-document-vision-ocr-extractor`      | OCR, extracción estructurada y evidencia espacial |
 | 90-94  | `23-multimodal-image-text-assistant`    | Sistema simple imagen + texto                     |
 | 95-99  | `24-edge-vision-optimization-lab`       | Optimización de modelos visuales para inferencia  |
 
@@ -467,74 +467,71 @@ imágenes anotadas
 
 ---
 
-## 22 — video-understanding-basics-lab
+## 22 — document-vision-ocr-extractor
 
 ### Objetivo
 
-Crear un lab para entender procesamiento básico de video.
-
-Este proyecto introduce la idea de que el video no es una imagen, sino una secuencia de frames.
+Crear un workbench de Document AI que convierta un recibo de una página en texto localizado,
+campos normalizados y evidencia auditable.
 
 ---
 
 ### Flujo
 
 ```txt id="d8sp3z"
-video
-→ extracción de frames
-→ preprocessing
-→ análisis por frame
-→ agregación temporal
-→ eventos simples
-→ reporte
+imagen o PDF de una página
+→ validación y preprocessing
+→ localización y OCR
+→ orden de lectura
+→ extracción de campos
+→ normalización y revisión
+→ JSON o CSV
 ```
 
 ---
 
 ### Aprendizajes principales
 
-* Video as frames.
-* FPS.
-* Frame extraction.
-* Clasificación por frame.
-* Detección por frame.
-* Agregación temporal.
-* Eventos simples.
-* Limitaciones de analizar video frame por frame.
-* Relación con modelos espacio-temporales.
+* OCR con texto, confianza y cajas.
+* Orden de lectura y evidencia espacial.
+* Extracción de `company`, `date`, `address` y `total`.
+* Normalización sin sobrescribir el valor raw.
+* Separación entre predicciones y ediciones del operador.
+* CER, WER, exact match, review rate y error propagation.
+* Límites entre fixtures de cualificación y benchmarks oficiales.
 
 ---
 
 ### Módulos
 
-* Video Loading.
-* Frame Extraction.
-* Frame-Level Inference.
-* Temporal Aggregation.
-* Simple Event Detection.
-* Video Analysis Report.
+* Document Ingestion.
+* Image Preprocessing.
+* OCR and Reading Order.
+* Layout-Aware Field Extraction.
+* Evidence Review and Export.
+* Qualification Evaluation.
 
 ---
 
 ### Labs
 
-* `tec-video-frame-extraction-lab`
-* `tec-frame-level-inference-lab`
-* `tec-temporal-aggregation-lab`
-* `tec-simple-video-event-lab`
-* `tec-video-limitations-lab`
+* `tec-document-preprocessing-lab`
+* `tec-ocr-localization-lab`
+* `tec-layout-field-extraction-lab`
+* `tec-normalization-review-lab`
+* `tec-ocr-evaluation-lab`
 
 ---
 
 ### Entregable final
 
-* Video procesado.
-* Frames extraídos.
-* Inferencia por frame.
-* Resultado agregado.
-* Reporte de eventos simples.
-* README técnico.
-* Demo o clip anotado.
+* API FastAPI y workbench React.
+* Recibos de cualificación reproducibles.
+* OCR localizado y campos con evidencia.
+* Comparación raw vs normalizado y revisión humana.
+* Exportación JSON/CSV.
+* Evaluación oracle vs end-to-end.
+* Docker y preparación para AWS App Runner.
 
 ---
 

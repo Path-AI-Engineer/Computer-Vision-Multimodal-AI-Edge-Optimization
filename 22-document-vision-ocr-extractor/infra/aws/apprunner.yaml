@@ -1,0 +1,68 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Document Extraction Workbench on AWS App Runner
+
+Parameters:
+  ServiceName:
+    Type: String
+    Default: ai-04-p22-document-extraction
+  ImageIdentifier:
+    Type: String
+    Description: Immutable private ECR image URI including its tag
+
+Resources:
+  AppRunnerEcrAccessRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub "${ServiceName}-ecr-access"
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: build.apprunner.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSAppRunnerServicePolicyForECRAccess
+      Tags:
+        - {Key: Path, Value: ai-engineer}
+        - {Key: Plan, Value: "04"}
+        - {Key: Project, Value: "22"}
+
+  Service:
+    Type: AWS::AppRunner::Service
+    Properties:
+      ServiceName: !Ref ServiceName
+      SourceConfiguration:
+        AuthenticationConfiguration:
+          AccessRoleArn: !GetAtt AppRunnerEcrAccessRole.Arn
+        AutoDeploymentsEnabled: false
+        ImageRepository:
+          ImageIdentifier: !Ref ImageIdentifier
+          ImageRepositoryType: ECR
+          ImageConfiguration:
+            Port: "8080"
+            RuntimeEnvironmentVariables:
+              - {Name: DOCUMENT_VISION_ROOT, Value: /app}
+              - {Name: MAX_UPLOAD_BYTES, Value: "8388608"}
+              - {Name: EXTRACTION_TTL_SECONDS, Value: "3600"}
+      InstanceConfiguration:
+        Cpu: "1 vCPU"
+        Memory: "2 GB"
+      HealthCheckConfiguration:
+        Protocol: HTTP
+        Path: /ready
+        Interval: 10
+        Timeout: 5
+        HealthyThreshold: 1
+        UnhealthyThreshold: 5
+      Tags:
+        - {Key: Path, Value: ai-engineer}
+        - {Key: Plan, Value: "04"}
+        - {Key: Project, Value: "22"}
+        - {Key: Environment, Value: portfolio}
+
+Outputs:
+  ServiceArn:
+    Value: !GetAtt Service.ServiceArn
+  ServiceUrl:
+    Value: !GetAtt Service.ServiceUrl

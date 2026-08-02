@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "p22-qualification-v1",
+  "evidence_scope": "generated qualification fixtures; not SROIE",
+  "documents": 4,
+  "ocr": {
+    "cer": 0.0034,
+    "wer": 0.0208,
+    "line_exact_match": 0.9375,
+    "localization_precision_iou_0_5": 1.0,
+    "localization_recall_iou_0_5": 1.0
+  },
+  "end_to_end": {
+    "normalized_field_exact_match": 0.9375,
+    "document_exact_match": 0.75,
+    "review_rate": 0.0625,
+    "mean_field_confidence": 0.8506
+  },
+  "oracle_ocr": {
+    "normalized_field_exact_match": 1.0,
+    "document_exact_match": 1.0
+  },
+  "interpretation": "The oracle-to-end-to-end gap isolates OCR propagation on the sealed fixture set."
+}

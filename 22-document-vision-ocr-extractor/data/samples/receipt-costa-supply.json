@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "receipt-costa-supply",
+  "image": "data/samples/receipt-costa-supply.png",
+  "width": 720,
+  "height": 960,
+  "locale": "es-PE",
+  "ground_truth_fields": {
+    "company": "Costa Supply Co",
+    "address": "Calle Grau 880, Trujillo",
+    "date": "2026-07-21",
+    "total": "91.20"
+  },
+  "ground_truth_tokens": [
+    {
+      "token_id": "gt-000",
+      "text": "COSTA SUPPLY CO",
+      "confidence": 1.0,
+      "box": [
+        70,
+        62,
+        620,
+        111
+      ],
+      "line_index": 0
+    },
+    {
+      "token_id": "gt-001",
+      "text": "Address: Calle Grau 880, Trujillo",
+      "confidence": 1.0,
+      "box": [
+        70,
+        120,
+        650,
+        160
+      ],
+      "line_index": 1
+    },
+    {
+      "token_id": "gt-002",
+      "text": "Date: 21/07/2026",
+      "confidence": 1.0,
+      "box": [
+        70,
+        174,
+        420,
+        216
+      ],
+      "line_index": 2
+    },
+    {
+      "token_id": "gt-003",
+      "text": "TOTAL  $ 91.20",
+      "confidence": 1.0,
+      "box": [
+        360,
+        638,
+        655,
+        691
+      ],
+      "line_index": 3
+    }
+  ],
+  "predicted_tokens": [
+    {
+      "token_id": "ocr-000",
+      "text": "COSTA SUPPLY CO",
+      "confidence": 0.96,
+      "box": [
+        70,
+        62,
+        620,
+        111
+      ],
+      "line_index": 0
+    },
+    {
+      "token_id": "ocr-001",
+      "text": "Address: Calle Grau 880, Trujillo",
+      "confidence": 0.95,
+      "box": [
+        70,
+        120,
+        650,
+        160
+      ],
+      "line_index": 1
+    },
+    {
+      "token_id": "ocr-002",
+      "text": "Date: 21/07/2026",
+      "confidence": 0.94,
+      "box": [
+        70,
+        174,
+        420,
+        216
+      ],
+      "line_index": 2
+    },
+    {
+      "token_id": "ocr-003",
+      "text": "TOTAL  $ 91.20",
+      "confidence": 0.9299999999999999,
+      "box": [
+        360,
+        638,
+        655,
+        691
+      ],
+      "line_index": 3
+    }
+  ]
+}

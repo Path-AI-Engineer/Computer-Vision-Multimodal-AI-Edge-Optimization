@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "generated-receipt-qualification-v1",
+  "status": "QUALIFICATION_ONLY",
+  "official_sroie_status": "LOCKED_NOT_ACQUIRED",
+  "license": "Repository-authored synthetic fixtures",
+  "samples": [
+    {
+      "sample_id": "receipt-lima-market",
+      "image": "data/samples/receipt-lima-market.png",
+      "annotation": "data/samples/receipt-lima-market.json"
+    },
+    {
+      "sample_id": "receipt-north-star",
+      "image": "data/samples/receipt-north-star.png",
+      "annotation": "data/samples/receipt-north-star.json"
+    },
+    {
+      "sample_id": "receipt-costa-supply",
+      "image": "data/samples/receipt-costa-supply.png",
+      "annotation": "data/samples/receipt-costa-supply.json"
+    },
+    {
+      "sample_id": "receipt-urban-pantry",
+      "image": "data/samples/receipt-urban-pantry.png",
+      "annotation": "data/samples/receipt-urban-pantry.json"
+    }
+  ]
+}

@@ -1,4 +1,11 @@
-# 22-video-understanding-basics-lab
+# Retired placeholder
+
+The original Project 22 placeholder was superseded by
+[`22-document-vision-ocr-extractor`](../22-document-vision-ocr-extractor/README.md).
+
+No implementation or release evidence belongs in this directory. It remains only because
+the managed Windows workspace prevented deletion of the tracked placeholder during the
+Project 22 migration.
 
 ## 🧠 Descripción
 

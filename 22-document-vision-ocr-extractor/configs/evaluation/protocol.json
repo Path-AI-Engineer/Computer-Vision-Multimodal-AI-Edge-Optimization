@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "p22-qualification-v1",
+  "dataset": "generated-receipt-qualification-v1",
+  "official_benchmark": false,
+  "ocr_metrics": ["cer", "wer", "line_exact_match"],
+  "localization_metrics": ["precision@iou0.5", "recall@iou0.5"],
+  "field_metrics": ["normalized_exact_match", "document_exact_match"],
+  "operational_metrics": ["review_rate", "mean_confidence"],
+  "comparisons": ["oracle-ocr", "end-to-end-ocr"]
+}

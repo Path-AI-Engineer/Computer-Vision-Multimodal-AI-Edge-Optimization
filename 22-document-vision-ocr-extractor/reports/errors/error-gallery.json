@@ -1,0 +1,17 @@
+{
+  "errors": [
+    {
+      "sample_id": "receipt-urban-pantry",
+      "field": "address",
+      "expected": "91 King Road, Austin",
+      "predicted": null,
+      "confidence": 0.0,
+      "review_required": true,
+      "reason_codes": [
+        "ADDRESS_LEXICON",
+        "FIELD_NOT_FOUND",
+        "REVIEW_REQUIRED"
+      ]
+    }
+  ]
+}

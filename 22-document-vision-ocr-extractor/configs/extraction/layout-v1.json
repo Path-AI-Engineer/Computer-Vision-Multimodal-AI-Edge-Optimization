@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "extractor_version": "layout-aware-v1",
+  "fields": ["company", "date", "address", "total"],
+  "review_threshold": 0.82,
+  "normalization": "locale-aware-v1",
+  "ground_truth_access_during_inference": false
+}

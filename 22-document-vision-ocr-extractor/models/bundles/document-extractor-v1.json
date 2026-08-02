@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "bundle_id": "document-extractor-v1",
+  "release": "v1.0.0-rc.1",
+  "status": "QUALIFIED",
+  "ocr": "annotated-fixture-v1",
+  "upload_ocr": "paddleocr-v3-optional",
+  "extractor": "layout-aware-v1",
+  "evaluation_protocol": "p22-qualification-v1",
+  "official_benchmark": false,
+  "artifacts": {
+    "data/manifests/qualification.json": "4107d857fad99a25dae1f3ee7a19bb5a4d134f8e3740abd078c9a38be0446f64",
+    "models/extractors/layout-aware-v1.json": "dcd9265b7ff79f140b4e87744f93b4cdc31ab2456ff229368c3d7a437678d55a",
+    "reports/metrics/evaluation-summary.json": "0559f39c6bc3dd6e5b989b27f32517c807ccc554fcb8cacf899f61f57b6218f7",
+    "reports/errors/error-gallery.json": "424eafecb9778f60df2e1407df4d6535870e9d05b81551b4fddaf41242a438a7"
+  }
+}
