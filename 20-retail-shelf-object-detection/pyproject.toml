@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retail-shelf-detection-console"
+version = "1.0.0"
+description = "Evidence-first dense shelf object detection API and console."
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.139.0",
+  "numpy==1.26.4",
+  "pillow==10.4.0",
+  "pydantic==2.13.4",
+  "scipy==1.13.1",
+  "uvicorn[standard]==0.51.0",
+]
+
+[project.optional-dependencies]
+dev = ["httpx==0.28.1", "pytest==9.0.2", "ruff==0.14.10"]
+detection = [
+  "opencv-python-headless>=4.10,<5",
+  "torch>=2.6,<3",
+  "torchvision>=0.21,<1",
+  "ultralytics>=8.3,<9",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["backend*", "ml*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 96
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]

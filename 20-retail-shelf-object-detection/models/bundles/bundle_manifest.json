@@ -1,0 +1,11 @@
+{
+  "artifact_version": "shelf-detection-qualification-v1",
+  "bundle_path": "models/bundles/shelf-detector-qualification.json",
+  "bundle_sha256": "25d46764cd50ac6da28abe7b0523551821760131c9d0db4ab6e3ac0307fae8ae",
+  "class_name": "object",
+  "model_version": "component-detector-qualification-v1.0.0",
+  "preprocessing_version": "rgb-native-component-v1",
+  "profile": "qualification_smoke",
+  "test_status": "LOCKED_NOT_ACQUIRED",
+  "validation_map_50_95": 0.97815
+}

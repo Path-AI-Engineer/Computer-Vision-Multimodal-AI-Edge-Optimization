@@ -231,9 +231,9 @@ Ejemplos:
 
 | Semana | Proyecto                                | Objetivo                                          |
 | ------ | --------------------------------------- | ------------------------------------------------- |
-| 73-76  | `19-transfer-learning-image-classifier` | Clasificación visual usando modelos preentrenados |
-| 77-80  | `20-visual-search-embeddings-api`       | Búsqueda visual con embeddings e API              |
-| 81-85  | `21-object-detection-retail-lab`        | Detección de objetos aplicada a retail            |
+| 73-76  | `19-image-classification-api` | Clasificación fina, calibración, API y Studio visual |
+| 77-80  | `20-retail-shelf-object-detection`      | Detección densa, conteo visible, API y consola    |
+| 81-85  | `21-segmentation-quality-control-lab`   | Segmentación visual aplicada a control de calidad |
 | 86-89  | `22-video-understanding-basics-lab`     | Procesamiento y análisis básico de video          |
 | 90-94  | `23-multimodal-image-text-assistant`    | Sistema simple imagen + texto                     |
 | 95-99  | `24-edge-vision-optimization-lab`       | Optimización de modelos visuales para inferencia  |

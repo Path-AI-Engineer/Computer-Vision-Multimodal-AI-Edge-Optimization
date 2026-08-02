@@ -1,0 +1,19 @@
+{
+  "profiles": [
+    {
+      "images": 12,
+      "name": "smoke",
+      "state": "QUALIFICATION_EXECUTED"
+    },
+    {
+      "images": null,
+      "name": "development",
+      "state": "NOT_ACQUIRED"
+    },
+    {
+      "images": null,
+      "name": "full",
+      "state": "NOT_ACQUIRED"
+    }
+  ]
+}

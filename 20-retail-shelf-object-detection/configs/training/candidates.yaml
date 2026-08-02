@@ -1,0 +1,14 @@
+selection_metric: map_50_95
+models:
+  - count-by-mean
+  - qualification-component-detector
+  - yolo-nano
+  - yolo-small
+  - faster-rcnn-resnet50-fpn
+yolo_nano:
+  state: protocol_ready_not_executed
+  declared_family: Ultralytics YOLO nano
+yolo_small:
+  state: optional_not_executed
+faster_rcnn:
+  state: protocol_ready_not_executed

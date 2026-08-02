@@ -1,0 +1,14 @@
+dataset: SKU-110K
+official_class: object
+official_splits: [train, validation, test]
+official_counts:
+  train: 8219
+  validation: 588
+  test: 2936
+active_profile: qualification_smoke
+qualification_source: deterministic_procedural_shelf_scenes
+test_access: LOCKED_NOT_ACQUIRED
+density_thresholds:
+  low_max: 40
+  medium_max: 70
+  high_min: 71

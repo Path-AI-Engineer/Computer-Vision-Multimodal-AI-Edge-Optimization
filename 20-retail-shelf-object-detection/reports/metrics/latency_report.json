@@ -1,0 +1,8 @@
+{
+  "p50_ms": 107.262,
+  "p95_ms": 151.748,
+  "profile": "qualification_smoke",
+  "runs": 12,
+  "throughput_images_per_second": 9.358,
+  "warning": "Local qualification latency is not a real-time claim."
+}

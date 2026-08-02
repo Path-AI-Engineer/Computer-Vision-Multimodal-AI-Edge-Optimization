@@ -1,0 +1,16 @@
+{
+  "artifact_version": "shelf-detection-qualification-v1",
+  "class_id": 0,
+  "class_name": "object",
+  "config": {
+    "confidence_threshold": 0.35,
+    "foreground_distance": 38.0,
+    "maximum_detections": 250,
+    "minimum_component_area": 120,
+    "model_version": "component-detector-qualification-v1.0.0",
+    "nms_iou_threshold": 0.45
+  },
+  "preprocessing_version": "rgb-native-component-v1",
+  "profile": "qualification_smoke",
+  "test_status": "LOCKED_NOT_ACQUIRED"
+}

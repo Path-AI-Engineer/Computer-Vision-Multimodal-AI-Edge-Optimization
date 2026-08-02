@@ -1,0 +1,1 @@
+"""Dense shelf detection pipeline."""

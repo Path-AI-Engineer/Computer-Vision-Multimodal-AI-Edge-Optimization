@@ -1,0 +1,9 @@
+{
+  "name": "retail-shelf-detection-console",
+  "private": true,
+  "version": "1.0.0-rc.1",
+  "scripts": {
+    "build": "npm --prefix frontend run build",
+    "dev": "npm --prefix frontend run dev"
+  }
+}

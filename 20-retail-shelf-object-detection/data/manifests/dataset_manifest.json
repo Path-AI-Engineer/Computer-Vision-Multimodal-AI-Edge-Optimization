@@ -1,0 +1,13 @@
+{
+  "class_count": 1,
+  "class_name": "object",
+  "dataset": "SKU-110K protocol / procedural qualification fixture",
+  "disclosure": "Qualification scenes are not SKU-110K observations.",
+  "images": 12,
+  "objects": 740,
+  "official_dataset_status": "NOT_ACQUIRED",
+  "official_source": "https://github.com/eg4000/SKU110K_CVPR19",
+  "official_test_status": "LOCKED_NOT_ACQUIRED",
+  "profile": "qualification_smoke",
+  "source": "deterministic procedural shelf scenes"
+}

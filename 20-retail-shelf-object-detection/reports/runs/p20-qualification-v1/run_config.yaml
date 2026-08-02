@@ -1,0 +1,9 @@
+run_id: p20-qualification-v1
+seed: 200533
+profile: qualification_smoke
+dataset_mode: deterministic_procedural_shelves
+model: qualification-component-detector
+confidence_threshold: 0.35
+nms_iou_threshold: 0.45
+primary_metric: map_50_95
+official_test_status: LOCKED_NOT_ACQUIRED

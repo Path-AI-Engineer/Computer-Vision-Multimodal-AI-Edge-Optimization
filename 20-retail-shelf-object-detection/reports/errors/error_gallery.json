@@ -1,0 +1,104 @@
+{
+  "items": [
+    {
+      "count_error": 0,
+      "density": "low",
+      "false_negative": 0,
+      "false_positive": 0,
+      "image_id": "qualification-shelf-000",
+      "image_url": "/samples/qualification-shelf-000.png",
+      "overlay_url": "/overlays/qualification-shelf-000.png",
+      "predicted_count": 30,
+      "truth_count": 30
+    },
+    {
+      "count_error": 0,
+      "density": "medium",
+      "false_negative": 0,
+      "false_positive": 0,
+      "image_id": "qualification-shelf-001",
+      "image_url": "/samples/qualification-shelf-001.png",
+      "overlay_url": "/overlays/qualification-shelf-001.png",
+      "predicted_count": 60,
+      "truth_count": 60
+    },
+    {
+      "count_error": 0,
+      "density": "high",
+      "false_negative": 0,
+      "false_positive": 0,
+      "image_id": "qualification-shelf-002",
+      "image_url": "/samples/qualification-shelf-002.png",
+      "overlay_url": "/overlays/qualification-shelf-002.png",
+      "predicted_count": 95,
+      "truth_count": 95
+    },
+    {
+      "count_error": 0,
+      "density": "low",
+      "false_negative": 0,
+      "false_positive": 0,
+      "image_id": "qualification-shelf-003",
+      "image_url": "/samples/qualification-shelf-003.png",
+      "overlay_url": "/overlays/qualification-shelf-003.png",
+      "predicted_count": 30,
+      "truth_count": 30
+    },
+    {
+      "count_error": 0,
+      "density": "medium",
+      "false_negative": 0,
+      "false_positive": 0,
+      "image_id": "qualification-shelf-004",
+      "image_url": "/samples/qualification-shelf-004.png",
+      "overlay_url": "/overlays/qualification-shelf-004.png",
+      "predicted_count": 60,
+      "truth_count": 60
+    },
+    {
+      "count_error": 0,
+      "density": "high",
+      "false_negative": 0,
+      "false_positive": 0,
+      "image_id": "qualification-shelf-005",
+      "image_url": "/samples/qualification-shelf-005.png",
+      "overlay_url": "/overlays/qualification-shelf-005.png",
+      "predicted_count": 95,
+      "truth_count": 95
+    },
+    {
+      "count_error": 0,
+      "density": "low",
+      "false_negative": 0,
+      "false_positive": 0,
+      "image_id": "qualification-shelf-006",
+      "image_url": "/samples/qualification-shelf-006.png",
+      "overlay_url": "/overlays/qualification-shelf-006.png",
+      "predicted_count": 30,
+      "truth_count": 30
+    },
+    {
+      "count_error": 0,
+      "density": "medium",
+      "false_negative": 0,
+      "false_positive": 0,
+      "image_id": "qualification-shelf-007",
+      "image_url": "/samples/qualification-shelf-007.png",
+      "overlay_url": "/overlays/qualification-shelf-007.png",
+      "predicted_count": 60,
+      "truth_count": 60
+    },
+    {
+      "count_error": 0,
+      "density": "high",
+      "false_negative": 0,
+      "false_positive": 0,
+      "image_id": "qualification-shelf-008",
+      "image_url": "/samples/qualification-shelf-008.png",
+      "overlay_url": "/overlays/qualification-shelf-008.png",
+      "predicted_count": 95,
+      "truth_count": 95
+    }
+  ],
+  "profile": "qualification_smoke"
+}

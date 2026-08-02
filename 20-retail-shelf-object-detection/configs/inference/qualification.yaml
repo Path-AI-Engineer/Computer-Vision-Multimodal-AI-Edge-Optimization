@@ -1,0 +1,7 @@
+model_version: component-detector-qualification-v1.0.0
+profile: qualification_smoke
+confidence_threshold: 0.35
+nms_iou_threshold: 0.45
+minimum_component_area: 120
+foreground_distance: 38
+max_detections: 250

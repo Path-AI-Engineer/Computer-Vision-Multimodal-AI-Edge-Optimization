@@ -1,0 +1,36 @@
+{
+  "models": [
+    {
+      "count_mae": 22.222,
+      "count_rmse": 26.562,
+      "mean_count": 61.667,
+      "model_id": "count-by-mean",
+      "selection_eligible": false,
+      "status": "qualification_baseline_executed",
+      "visual": false
+    },
+    {
+      "artifact_bytes": 496,
+      "count_mae": 0.0,
+      "map_50_95": 0.97815,
+      "model_id": "qualification-component-detector",
+      "selection_eligible": true,
+      "status": "executed"
+    },
+    {
+      "model_id": "yolo-nano",
+      "status": "protocol_ready_not_executed"
+    },
+    {
+      "model_id": "yolo-small",
+      "status": "optional_not_executed"
+    },
+    {
+      "model_id": "faster-rcnn",
+      "status": "protocol_ready_not_executed"
+    }
+  ],
+  "profile": "qualification_smoke",
+  "selected_model": "qualification-component-detector",
+  "warning": "No SKU-110K or YOLO metrics were produced in this qualification run."
+}
