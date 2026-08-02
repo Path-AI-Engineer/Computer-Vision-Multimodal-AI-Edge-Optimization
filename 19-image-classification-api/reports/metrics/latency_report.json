@@ -5,5 +5,5 @@
   "p95_ms": 4.541,
   "runs": 30,
   "throughput_images_per_second": 244.678,
-  "warning": "Local qualification latency is not a Cloud Run SLA."
+  "warning": "Local qualification latency is not a production service SLA."
 }

@@ -13,7 +13,7 @@ FastAPI and a React Studio.
 - single and bounded-batch inference endpoints;
 - a React interface connected only to API responses and generated artifacts;
 - model comparison with explicit `executed` and `not executed` states;
-- Docker and Cloud Run release definitions.
+- Docker and AWS App Runner release definitions backed by private Amazon ECR.
 
 The active bundle is `QUALIFICATION_ONLY`. It is not trained on Oxford-IIIT Pet, and its metrics
 must not be presented as real breed-classification performance. The full map remains open until
@@ -71,9 +71,35 @@ models/        candidate checkpoints and immutable served bundle
 reports/       generated metrics, figures, errors and run configuration
 docs/          architecture, contracts, protocol, decisions and status
 docker/        production multi-stage image
-infra/         Docker notes and GCP Cloud Run release workflow
+infra/         Docker notes and AWS ECR/App Runner release workflow
 tests/         unit, contract and integration acceptance
 ```
+
+## AWS release workflow
+
+Run the local, non-mutating release preflight:
+
+```powershell
+.\infra\aws\release.ps1 -Region "us-east-1"
+```
+
+With authenticated AWS CLI access, validate identity and the CloudFormation template without
+deploying:
+
+```powershell
+.\infra\aws\release.ps1 -Region "us-east-1" -ValidateAws
+```
+
+When an AWS account is authenticated and a deployment is intended, publish an immutable image
+to the Plan 04 ECR namespace and reconcile the App Runner service with:
+
+```powershell
+.\infra\aws\release.ps1 -Region "us-east-1" -ImageTag "v1.0.0-rc.1" -Apply
+```
+
+The deployed service keeps `/ready` as its health contract and serves the product at `/app/`.
+Do not pass secrets as plain environment variables; future credentials belong in AWS Secrets
+Manager or Systems Manager Parameter Store.
 
 ## Responsible use
 

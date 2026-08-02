@@ -1,11 +1,2 @@
-steps:
-  - name: gcr.io/cloud-builders/docker
-    args:
-      - build
-      - --file=docker/production.Dockerfile
-      - --tag=${_IMAGE}
-      - .
-images:
-  - ${_IMAGE}
-options:
-  logging: CLOUD_LOGGING_ONLY
+# Retired compatibility marker.
+# Plan 04 targets AWS. Use ../aws/release.ps1 and ../aws/apprunner.yaml.

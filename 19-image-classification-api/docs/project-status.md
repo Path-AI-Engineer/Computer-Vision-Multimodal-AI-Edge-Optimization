@@ -13,7 +13,7 @@ The complete map cannot be marked closed yet because these evidence-producing ta
 - select one candidate and calibrator from validation only;
 - open official test exactly once and persist the immutable report;
 - generate genuine Grad-CAM evidence only if a CNN or ResNet is selected;
-- run external load, security and Cloud Run acceptance before a production claim.
+- run external load, security and AWS App Runner acceptance before a production claim.
 
 No fake values substitute for these runs. `reports/metrics/model_comparison.json` is the source of
 truth for executed versus protocol-ready candidates.
@@ -26,7 +26,8 @@ truth for executed versus protocol-ready candidates.
 - React TypeScript/Vite production build: passed with the locked dependency tree.
 - Docker Compose configuration: passed.
 - Live HTTP readiness and multipart inference: passed on port 8019.
-- GCP release preflight: passed without applying a deployment.
+- AWS release definition: ECR/App Runner CloudFormation and local release preflight implemented.
+- AWS account template validation and deployment: not executed in this acceptance record.
 - Browser visual walkthrough: not executed because localhost access was denied by the browser
   permission boundary.
 - Docker image build: not executed because this managed session could not access the local

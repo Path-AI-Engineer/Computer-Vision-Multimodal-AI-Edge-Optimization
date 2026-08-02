@@ -287,7 +287,7 @@ def _measure_latency(
         "p50_ms": round(statistics.median(ordered), 3),
         "p95_ms": round(float(np.quantile(ordered, 0.95)), 3),
         "throughput_images_per_second": round(1_000 / statistics.mean(ordered), 3),
-        "warning": "Local qualification latency is not a Cloud Run SLA.",
+        "warning": "Local qualification latency is not a production service SLA.",
     }
 
 
