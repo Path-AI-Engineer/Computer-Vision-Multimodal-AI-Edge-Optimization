@@ -1,0 +1,204 @@
+{
+  "artifact_version": "pet-studio-qualification-v1",
+  "items": [
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.411081,
+      "correct": true,
+      "image_url": "/samples/breed-01-sample-04.png",
+      "prediction": "American Bulldog",
+      "prediction_id": 1,
+      "sample_id": "breed-01-sample-04",
+      "truth": "American Bulldog",
+      "truth_id": 1
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.86418,
+      "correct": true,
+      "image_url": "/samples/breed-22-sample-04.png",
+      "prediction": "Newfoundland",
+      "prediction_id": 22,
+      "sample_id": "breed-22-sample-04",
+      "truth": "Newfoundland",
+      "truth_id": 22
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.900379,
+      "correct": true,
+      "image_url": "/samples/breed-02-sample-04.png",
+      "prediction": "American Pit Bull Terrier",
+      "prediction_id": 2,
+      "sample_id": "breed-02-sample-04",
+      "truth": "American Pit Bull Terrier",
+      "truth_id": 2
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.905726,
+      "correct": true,
+      "image_url": "/samples/breed-27-sample-05.png",
+      "prediction": "Russian Blue",
+      "prediction_id": 27,
+      "sample_id": "breed-27-sample-05",
+      "truth": "Russian Blue",
+      "truth_id": 27
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.918367,
+      "correct": true,
+      "image_url": "/samples/breed-31-sample-04.png",
+      "prediction": "Shiba Inu",
+      "prediction_id": 31,
+      "sample_id": "breed-31-sample-04",
+      "truth": "Shiba Inu",
+      "truth_id": 31
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.923456,
+      "correct": true,
+      "image_url": "/samples/breed-27-sample-04.png",
+      "prediction": "Russian Blue",
+      "prediction_id": 27,
+      "sample_id": "breed-27-sample-04",
+      "truth": "Russian Blue",
+      "truth_id": 27
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.925573,
+      "correct": true,
+      "image_url": "/samples/breed-13-sample-04.png",
+      "prediction": "English Setter",
+      "prediction_id": 13,
+      "sample_id": "breed-13-sample-04",
+      "truth": "English Setter",
+      "truth_id": 13
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.926889,
+      "correct": true,
+      "image_url": "/samples/breed-10-sample-04.png",
+      "prediction": "Chihuahua",
+      "prediction_id": 10,
+      "sample_id": "breed-10-sample-04",
+      "truth": "Chihuahua",
+      "truth_id": 10
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.933127,
+      "correct": true,
+      "image_url": "/samples/breed-35-sample-05.png",
+      "prediction": "Wheaten Terrier",
+      "prediction_id": 35,
+      "sample_id": "breed-35-sample-05",
+      "truth": "Wheaten Terrier",
+      "truth_id": 35
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.939241,
+      "correct": true,
+      "image_url": "/samples/breed-22-sample-05.png",
+      "prediction": "Newfoundland",
+      "prediction_id": 22,
+      "sample_id": "breed-22-sample-05",
+      "truth": "Newfoundland",
+      "truth_id": 22
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.942779,
+      "correct": true,
+      "image_url": "/samples/breed-13-sample-05.png",
+      "prediction": "English Setter",
+      "prediction_id": 13,
+      "sample_id": "breed-13-sample-05",
+      "truth": "English Setter",
+      "truth_id": 13
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.950824,
+      "correct": true,
+      "image_url": "/samples/breed-16-sample-04.png",
+      "prediction": "Havanese",
+      "prediction_id": 16,
+      "sample_id": "breed-16-sample-04",
+      "truth": "Havanese",
+      "truth_id": 16
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.955572,
+      "correct": true,
+      "image_url": "/samples/breed-25-sample-05.png",
+      "prediction": "Pug",
+      "prediction_id": 25,
+      "sample_id": "breed-25-sample-05",
+      "truth": "Pug",
+      "truth_id": 25
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.95558,
+      "correct": true,
+      "image_url": "/samples/breed-34-sample-04.png",
+      "prediction": "Staffordshire Bull Terrier",
+      "prediction_id": 34,
+      "sample_id": "breed-34-sample-04",
+      "truth": "Staffordshire Bull Terrier",
+      "truth_id": 34
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.957587,
+      "correct": true,
+      "image_url": "/samples/breed-30-sample-05.png",
+      "prediction": "Scottish Terrier",
+      "prediction_id": 30,
+      "sample_id": "breed-30-sample-05",
+      "truth": "Scottish Terrier",
+      "truth_id": 30
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.958153,
+      "correct": true,
+      "image_url": "/samples/breed-02-sample-05.png",
+      "prediction": "American Pit Bull Terrier",
+      "prediction_id": 2,
+      "sample_id": "breed-02-sample-05",
+      "truth": "American Pit Bull Terrier",
+      "truth_id": 2
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.962571,
+      "correct": true,
+      "image_url": "/samples/breed-16-sample-05.png",
+      "prediction": "Havanese",
+      "prediction_id": 16,
+      "sample_id": "breed-16-sample-05",
+      "truth": "Havanese",
+      "truth_id": 16
+    },
+    {
+      "category": "lowest_confidence_correct",
+      "confidence": 0.96396,
+      "correct": true,
+      "image_url": "/samples/breed-11-sample-05.png",
+      "prediction": "Egyptian Mau",
+      "prediction_id": 11,
+      "sample_id": "breed-11-sample-05",
+      "truth": "Egyptian Mau",
+      "truth_id": 11
+    }
+  ],
+  "scope": "qualification_validation"
+}

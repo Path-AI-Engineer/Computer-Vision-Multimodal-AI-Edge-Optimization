@@ -1,0 +1,13 @@
+{
+  "accuracy_top_1": 1.0,
+  "accuracy_top_5": 1.0,
+  "artifact_version": "pet-studio-qualification-v1",
+  "evaluation_scope": "procedural_qualification_validation",
+  "examples": 74,
+  "expected_calibration_error": 0.03538,
+  "macro_f1": 1.0,
+  "negative_log_likelihood": 0.04017,
+  "temperature": 0.5,
+  "test_status": "LOCKED_NOT_ACQUIRED",
+  "training_seconds": 0.7531
+}

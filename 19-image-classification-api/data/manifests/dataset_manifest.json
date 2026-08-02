@@ -1,0 +1,19 @@
+{
+  "artifact_version": "pet-studio-qualification-v1",
+  "categories": 37,
+  "dataset_name": "Oxford-IIIT Pet protocol / procedural qualification fixture",
+  "dimensions": [
+    180,
+    180
+  ],
+  "disclosure": "Qualification images are not Oxford-IIIT Pet observations.",
+  "duplicates": 0,
+  "images": 222,
+  "images_per_class": 6,
+  "license_reference": "CC BY-SA 4.0 applies to Oxford-IIIT Pet; fixture code is repository-owned",
+  "manifest_sha256": "f2f3913d4daf93af7365d1163c1ad989c7a55ca37124ccfc900a5ad55acef997",
+  "mode": "QUALIFICATION_ONLY",
+  "official_source": "https://www.robots.ox.ac.uk/~vgg/data/pets/",
+  "official_test_status": "LOCKED_NOT_ACQUIRED",
+  "source": "locally generated procedural images"
+}

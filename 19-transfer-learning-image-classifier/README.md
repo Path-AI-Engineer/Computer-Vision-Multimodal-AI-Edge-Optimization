@@ -1,3 +1,8 @@
+# Legacy project name
+
+The active implementation moved to `19-image-classification-api`. This directory is retained
+only because the current Windows ACL prevents its removal from this session.
+
 # 19-transfer-learning-image-classifier
 
 ## 🧠 Descripción

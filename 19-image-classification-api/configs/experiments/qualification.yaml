@@ -1,0 +1,10 @@
+run_id: p19-qualification-v1
+seed: 190505
+dataset_mode: procedural_qualification_fixture
+selection_split: validation
+test_access: forbidden
+models_executed: [majority, hog-linear]
+models_smoke_checked: [small-cnn, resnet18-frozen, vit-b-16-frozen]
+primary_metric: macro_f1
+calibration: temperature_scaling_on_validation
+

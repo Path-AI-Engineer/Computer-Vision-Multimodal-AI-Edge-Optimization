@@ -1,0 +1,14 @@
+run_id: p19-qualification-v1
+seed: 190505
+dataset_mode: procedural_qualification_fixture
+dataset_observations: 222
+classes: 37
+train_observations: 148
+validation_observations: 74
+official_test_status: LOCKED_NOT_ACQUIRED
+model: hog-linear-qualification
+feature_version: hog-rgb-160-v1
+preprocessing_version: rgb-hog-160-v1
+calibration: temperature_scaling_on_validation
+primary_metric: macro_f1
+evidence_boundary: QUALIFICATION_ONLY

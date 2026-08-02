@@ -1,0 +1,21 @@
+services:
+  pet-studio:
+    build:
+      context: .
+      dockerfile: docker/production.Dockerfile
+    environment:
+      PET_STUDIO_ROOT: /app
+      ALLOWED_ORIGINS: http://localhost:8019
+      MAX_UPLOAD_BYTES: "4194304"
+      MAX_BATCH_SIZE: "8"
+      PORT: "8080"
+    ports:
+      - "8019:8080"
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    restart: unless-stopped

@@ -1,0 +1,54 @@
+{
+  "artifact_version": "pet-studio-qualification-v1",
+  "models": [
+    {
+      "accuracy_top_1": 0.02703,
+      "family": "minimum_reference",
+      "macro_f1": 0.00073,
+      "model_id": "majority",
+      "selection_eligible": false,
+      "status": "executed"
+    },
+    {
+      "accuracy_top_1": 1.0,
+      "artifact_bytes": 868961,
+      "ece": 0.03538,
+      "family": "classical_visual",
+      "macro_f1": 1.0,
+      "model_id": "hog-linear-qualification",
+      "selection_eligible": true,
+      "status": "executed",
+      "training_seconds": 0.7531
+    },
+    {
+      "family": "cnn_from_scratch",
+      "model_id": "small-cnn",
+      "selection_eligible": false,
+      "status": "implemented_not_qualified"
+    },
+    {
+      "declared_weights": "IMAGENET1K_V1",
+      "family": "transfer_learning",
+      "model_id": "resnet18-frozen",
+      "selection_eligible": false,
+      "status": "protocol_ready_not_executed"
+    },
+    {
+      "declared_weights": "IMAGENET1K_V1",
+      "family": "transfer_learning",
+      "model_id": "resnet18-finetuned",
+      "selection_eligible": false,
+      "status": "protocol_ready_not_executed"
+    },
+    {
+      "declared_weights": "IMAGENET1K_V1",
+      "family": "vision_transformer",
+      "model_id": "vit-b-16-frozen",
+      "selection_eligible": false,
+      "status": "protocol_ready_not_executed"
+    }
+  ],
+  "selected_model": "hog-linear-qualification",
+  "selection_metric": "macro_f1",
+  "warning": "Only majority and HOG-linear were executed on the qualification fixture."
+}

@@ -1,0 +1,13 @@
+dataset: Oxford-IIIT Pet
+source: https://www.robots.ox.ac.uk/~vgg/data/pets/
+license: CC BY-SA 4.0
+categories: 37
+official_splits: [trainval, test]
+development_seed: 190505
+validation_fraction: 0.2
+test_policy: locked_until_model_and_calibrator_are_selected
+qualification_fixture:
+  enabled_by_default: true
+  samples_per_class: 6
+  disclosure: procedural images verify the pipeline and are not Oxford observations
+

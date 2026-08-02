@@ -1,0 +1,9 @@
+{
+  "artifact_version": "pet-studio-qualification-v1",
+  "environment": "local_cpu_qualification",
+  "p50_ms": 4.006,
+  "p95_ms": 4.541,
+  "runs": 30,
+  "throughput_images_per_second": 244.678,
+  "warning": "Local qualification latency is not a Cloud Run SLA."
+}

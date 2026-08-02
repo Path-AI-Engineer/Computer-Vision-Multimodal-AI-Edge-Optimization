@@ -1,0 +1,14 @@
+small_cnn:
+  status: implemented_not_qualified
+  weights: random_initialization
+resnet18_frozen:
+  status: implemented_not_qualified
+  declared_weights: IMAGENET1K_V1
+resnet18_finetuned:
+  status: protocol_ready_not_executed
+  declared_weights: IMAGENET1K_V1
+vit_b_16_frozen:
+  status: implemented_not_qualified
+  declared_weights: IMAGENET1K_V1
+test_policy: official_test_remains_locked
+

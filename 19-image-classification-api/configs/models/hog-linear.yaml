@@ -1,0 +1,9 @@
+model_id: hog-linear-qualification
+feature_contract: hog-rgb-v1
+classifier: logistic_regression
+solver: lbfgs
+regularization_c: 1.0
+max_iter: 800
+selection_metric: macro_f1
+abstention_threshold: 0.62
+

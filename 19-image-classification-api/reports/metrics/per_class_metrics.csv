@@ -1,0 +1,38 @@
+class_id,class_name,precision,recall,f1,support
+0,Abyssinian,1.0,1.0,1.0,2
+1,American Bulldog,1.0,1.0,1.0,2
+2,American Pit Bull Terrier,1.0,1.0,1.0,2
+3,Basset Hound,1.0,1.0,1.0,2
+4,Beagle,1.0,1.0,1.0,2
+5,Bengal,1.0,1.0,1.0,2
+6,Birman,1.0,1.0,1.0,2
+7,Bombay,1.0,1.0,1.0,2
+8,Boxer,1.0,1.0,1.0,2
+9,British Shorthair,1.0,1.0,1.0,2
+10,Chihuahua,1.0,1.0,1.0,2
+11,Egyptian Mau,1.0,1.0,1.0,2
+12,English Cocker Spaniel,1.0,1.0,1.0,2
+13,English Setter,1.0,1.0,1.0,2
+14,German Shorthaired,1.0,1.0,1.0,2
+15,Great Pyrenees,1.0,1.0,1.0,2
+16,Havanese,1.0,1.0,1.0,2
+17,Japanese Chin,1.0,1.0,1.0,2
+18,Keeshond,1.0,1.0,1.0,2
+19,Leonberger,1.0,1.0,1.0,2
+20,Maine Coon,1.0,1.0,1.0,2
+21,Miniature Pinscher,1.0,1.0,1.0,2
+22,Newfoundland,1.0,1.0,1.0,2
+23,Persian,1.0,1.0,1.0,2
+24,Pomeranian,1.0,1.0,1.0,2
+25,Pug,1.0,1.0,1.0,2
+26,Ragdoll,1.0,1.0,1.0,2
+27,Russian Blue,1.0,1.0,1.0,2
+28,Saint Bernard,1.0,1.0,1.0,2
+29,Samoyed,1.0,1.0,1.0,2
+30,Scottish Terrier,1.0,1.0,1.0,2
+31,Shiba Inu,1.0,1.0,1.0,2
+32,Siamese,1.0,1.0,1.0,2
+33,Sphynx,1.0,1.0,1.0,2
+34,Staffordshire Bull Terrier,1.0,1.0,1.0,2
+35,Wheaten Terrier,1.0,1.0,1.0,2
+36,Yorkshire Terrier,1.0,1.0,1.0,2
