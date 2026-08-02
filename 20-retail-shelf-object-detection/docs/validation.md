@@ -11,7 +11,8 @@ Executed on 2026-08-01 from the real checkout.
 | TypeScript project build | Passed | `tsc -b` |
 | React dependency audit | Passed | 70 packages, 0 vulnerabilities |
 | Docker Compose config | Passed | Production service and health check resolved |
-| Cloud Run release preflight | Passed | Semantic service/image names and evidence validator |
+| AWS release definition | Passed | Semantic ECR/App Runner names, CloudFormation and local evidence validator |
+| AWS account validation/deployment | Not executed | Requires authenticated AWS CLI and explicit `-Apply` |
 | Live Uvicorn readiness | Passed | HTTP 200, `qualification_smoke` |
 | Live multipart inference | Passed | HTTP 200, 30 detections on the low-density sample |
 

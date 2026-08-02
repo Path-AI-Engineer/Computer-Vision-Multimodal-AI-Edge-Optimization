@@ -28,7 +28,7 @@ reports/                   persisted evaluation evidence
 tests/                     unit, integration and contract gates
 docker/                    production multi-stage image
 infra/docker/              local container instructions
-infra/gcp/                 Cloud Build and Cloud Run release workflow
+infra/aws/                 Amazon ECR and App Runner release workflow
 ```
 
 See [architecture.md](docs/architecture.md), [data-contract.md](docs/data-contract.md), [metrics-guide.md](docs/metrics-guide.md), [validation.md](docs/validation.md) and [project-status.md](docs/project-status.md).
@@ -62,19 +62,34 @@ Open `http://127.0.0.1:5173`. The production image serves the compiled console a
 
 The gate rebuilds qualification evidence, validates hashes and state boundaries, runs Ruff and pytest, builds React and checks Docker Compose.
 
-## Containers and GCP
+## Containers and AWS
 
 ```powershell
 docker compose up --build
 ```
 
-Open `http://127.0.0.1:8020/app/`. To run the non-mutating Cloud Run preflight:
+Open `http://127.0.0.1:8020/app/`. To run the local, non-mutating AWS release preflight:
 
 ```powershell
-.\infra\gcp\release.ps1 -ProjectId "jeanloa-ai-engineer" -Region "us-central1"
+.\infra\aws\release.ps1 -Region "us-east-1"
 ```
 
-Add `-Apply` only when an actual deployment is intended.
+To validate the AWS identity and CloudFormation template without deploying:
+
+```powershell
+.\infra\aws\release.ps1 -Region "us-east-1" -ValidateAws
+```
+
+When AWS credentials are active and an actual deployment is intended, publish an immutable image
+to the Plan 04 ECR namespace and reconcile the App Runner service:
+
+```powershell
+.\infra\aws\release.ps1 -Region "us-east-1" -ImageTag "v1.0.0-rc.1" -Apply
+```
+
+The service uses `/ready` for health checks and serves the console at `/app/`. Future secrets must
+be referenced from AWS Secrets Manager or Systems Manager Parameter Store, not embedded in source
+or passed as plain environment variables.
 
 ## Official benchmark path
 

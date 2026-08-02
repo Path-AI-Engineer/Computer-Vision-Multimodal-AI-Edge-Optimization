@@ -9,7 +9,7 @@ Image -> safe decode -> component/candidate detector -> confidence filter
 
 FastAPI owns transport contracts and delegates inference to `DetectionService`. The service loads one immutable bundle during application lifespan. The predictor has no filesystem or HTTP concerns. Evaluation reads persisted predictions instead of silently rerunning a different model.
 
-The production container compiles React in a Node stage, installs pinned Python dependencies in a slim runtime stage and serves both API and static UI from one Cloud Run service.
+The production container compiles React in a Node stage, installs pinned Python dependencies in a slim runtime stage and serves both API and static UI from one AWS App Runner service. The immutable image is stored in a private Amazon ECR repository and the service is reconciled through versioned CloudFormation.
 
 ## Evidence boundary
 

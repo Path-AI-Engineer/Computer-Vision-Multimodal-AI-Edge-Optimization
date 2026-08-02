@@ -12,7 +12,7 @@ Status: **IN_PROGRESS - qualification vertical complete**
 - Immutable artifact bundle and hash validation.
 - FastAPI single/batch inference and evidence endpoints.
 - Responsive React operations console.
-- Unit, integration and contract gates, Docker Compose validation and Cloud Run preflight.
+- Unit, integration and contract gates, Docker Compose validation and an AWS ECR/App Runner release definition.
 
 ## Not completed
 
@@ -23,5 +23,6 @@ Status: **IN_PROGRESS - qualification vertical complete**
 - Official test execution.
 - Hardware-backed production latency and throughput acceptance.
 - Production image build and browser E2E acceptance in an unrestricted runtime.
+- AWS account template validation and App Runner deployment.
 
 The project must not be described as a completed SKU-110K benchmark until every item above is evidenced.
