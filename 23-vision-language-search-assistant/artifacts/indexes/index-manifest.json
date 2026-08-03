@@ -1,0 +1,28 @@
+{
+  "approximate_is_proxy": true,
+  "available_indexes": [
+    "exact",
+    "approximate"
+  ],
+  "dimension": 12,
+  "dtype": "float32",
+  "embedding_manifest_version": "1.0",
+  "index_manifest_version": "1.0",
+  "index_version": "qualification-index-v1",
+  "item_ids": [
+    "vl-001",
+    "vl-002",
+    "vl-003",
+    "vl-004",
+    "vl-005",
+    "vl-006",
+    "vl-007",
+    "vl-008",
+    "vl-009",
+    "vl-010",
+    "vl-011",
+    "vl-012"
+  ],
+  "metric": "normalized_inner_product",
+  "model_version": "qualification-dual-encoder-v1"
+}

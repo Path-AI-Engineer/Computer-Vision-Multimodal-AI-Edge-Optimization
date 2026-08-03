@@ -1,0 +1,12 @@
+{
+  "caption_count": 24,
+  "claim_boundary": "Qualification adapter; no CLIP weight execution.",
+  "dataset": "sealed-visual-retrieval-qualification-v1",
+  "dimension": 12,
+  "dtype": "float32",
+  "embedding_manifest_version": "1.0",
+  "image_count": 12,
+  "model_version": "qualification-dual-encoder-v1",
+  "normalization": "l2",
+  "split": "development"
+}

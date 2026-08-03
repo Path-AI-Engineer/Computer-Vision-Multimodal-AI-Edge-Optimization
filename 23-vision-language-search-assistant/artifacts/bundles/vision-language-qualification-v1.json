@@ -1,0 +1,19 @@
+{
+  "bundle_id": "vision-language-qualification-v1",
+  "capabilities": [
+    "text-to-image",
+    "image-to-image",
+    "hybrid-search",
+    "grounded-sessions"
+  ],
+  "dataset": "sealed-visual-retrieval-qualification-v1",
+  "evidence_boundary": "This bundle validates retrieval, ranking, API and assistant contracts on sealed fixtures.",
+  "index_version": "qualification-index-v1",
+  "model_version": "qualification-dual-encoder-v1",
+  "official_benchmarks": {
+    "clip": "NOT_EXECUTED",
+    "flickr8k": "LOCKED_NOT_ACQUIRED",
+    "openclip": "NOT_EXECUTED"
+  },
+  "status": "READY"
+}

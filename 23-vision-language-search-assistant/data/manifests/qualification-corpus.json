@@ -1,0 +1,117 @@
+{
+  "dataset_id": "sealed-visual-retrieval-qualification-v1",
+  "status": "QUALIFICATION_ONLY",
+  "official_flickr8k": "LOCKED_NOT_ACQUIRED",
+  "split_policy": "development fixtures only; no test-set claim",
+  "items": [
+    {
+      "image_id": "vl-001", "filename": "vl-001-dog-beach.svg", "split": "development",
+      "category": "animals", "colors": ["blue", "sand"], "has_people": false,
+      "captions": [
+        {"caption_id": "vl-001-c1", "text": "A dog runs along a blue shoreline."},
+        {"caption_id": "vl-001-c2", "text": "An animal plays on the beach beside the water."}
+      ],
+      "vector": [0.1, 1, 1, 0, 0.3, 0, 0, 0, 0.5, 0.8, 0.6, 0], "checksum": "AUTO"
+    },
+    {
+      "image_id": "vl-002", "filename": "vl-002-cyclists-city.svg", "split": "development",
+      "category": "people", "colors": ["orange", "charcoal"], "has_people": true,
+      "captions": [
+        {"caption_id": "vl-002-c1", "text": "Two cyclists ride through a city street."},
+        {"caption_id": "vl-002-c2", "text": "People on bicycles move between urban buildings."}
+      ],
+      "vector": [1, 0, 0, 0.9, 0, 0, 1, 0, 0.3, 0.2, 1, 0], "checksum": "AUTO"
+    },
+    {
+      "image_id": "vl-003", "filename": "vl-003-red-kite.svg", "split": "development",
+      "category": "people", "colors": ["red", "green"], "has_people": true,
+      "captions": [
+        {"caption_id": "vl-003-c1", "text": "A child flies a red kite in a green field."},
+        {"caption_id": "vl-003-c2", "text": "A person plays outside beneath a bright kite."}
+      ],
+      "vector": [1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1, 0], "checksum": "AUTO"
+    },
+    {
+      "image_id": "vl-004", "filename": "vl-004-cat-window.svg", "split": "development",
+      "category": "animals", "colors": ["amber", "blue"], "has_people": false,
+      "captions": [
+        {"caption_id": "vl-004-c1", "text": "A cat sits inside beside a window."},
+        {"caption_id": "vl-004-c2", "text": "An indoor animal looks toward cool daylight."}
+      ],
+      "vector": [0, 1, 0, 0, 0.1, 0, 0, 0, 0.2, 0.5, 0, 1], "checksum": "AUTO"
+    },
+    {
+      "image_id": "vl-005", "filename": "vl-005-harbor.svg", "split": "development",
+      "category": "scenes", "colors": ["orange", "blue"], "has_people": false,
+      "captions": [
+        {"caption_id": "vl-005-c1", "text": "Small boats rest in a harbor at sunset."},
+        {"caption_id": "vl-005-c2", "text": "Warm evening light reflects across the water."}
+      ],
+      "vector": [0.1, 0, 1, 0.2, 0.2, 0, 1, 0.3, 1, 0.5, 0.2, 0], "checksum": "AUTO"
+    },
+    {
+      "image_id": "vl-006", "filename": "vl-006-fruit-market.svg", "split": "development",
+      "category": "food", "colors": ["orange", "green"], "has_people": true,
+      "captions": [
+        {"caption_id": "vl-006-c1", "text": "A vendor arranges fruit at an outdoor market."},
+        {"caption_id": "vl-006-c2", "text": "Colorful food fills an urban market stand."}
+      ],
+      "vector": [0.7, 0, 0, 1, 0, 1, 0, 0, 1, 0.3, 0.4, 0], "checksum": "AUTO"
+    },
+    {
+      "image_id": "vl-007", "filename": "vl-007-mountain-lake.svg", "split": "development",
+      "category": "nature", "colors": ["blue", "green"], "has_people": true,
+      "captions": [
+        {"caption_id": "vl-007-c1", "text": "A hiker walks beside a mountain lake."},
+        {"caption_id": "vl-007-c2", "text": "A person explores a cool blue alpine landscape."}
+      ],
+      "vector": [1, 0, 1, 0, 1, 0, 0, 0, 0.3, 0.9, 0.8, 0], "checksum": "AUTO"
+    },
+    {
+      "image_id": "vl-008", "filename": "vl-008-night-train.svg", "split": "development",
+      "category": "transport", "colors": ["violet", "charcoal"], "has_people": true,
+      "captions": [
+        {"caption_id": "vl-008-c1", "text": "A train waits at an urban station at night."},
+        {"caption_id": "vl-008-c2", "text": "People stand beneath lights beside evening transport."}
+      ],
+      "vector": [0.5, 0, 0, 1, 0, 0, 1, 1, 0.4, 0.5, 0.3, 0], "checksum": "AUTO"
+    },
+    {
+      "image_id": "vl-009", "filename": "vl-009-chef.svg", "split": "development",
+      "category": "food", "colors": ["amber", "white"], "has_people": true,
+      "captions": [
+        {"caption_id": "vl-009-c1", "text": "A chef cooks food inside a bright kitchen."},
+        {"caption_id": "vl-009-c2", "text": "A person prepares a meal at an indoor counter."}
+      ],
+      "vector": [1, 0, 0, 0, 0, 1, 0, 0, 0.5, 0, 0.8, 1], "checksum": "AUTO"
+    },
+    {
+      "image_id": "vl-010", "filename": "vl-010-horse.svg", "split": "development",
+      "category": "animals", "colors": ["green", "brown"], "has_people": false,
+      "captions": [
+        {"caption_id": "vl-010-c1", "text": "A horse walks through a green meadow."},
+        {"caption_id": "vl-010-c2", "text": "An animal stands in a quiet field."}
+      ],
+      "vector": [0, 1, 0, 0, 1, 0, 0, 0, 0.4, 0.8, 0.5, 0], "checksum": "AUTO"
+    },
+    {
+      "image_id": "vl-011", "filename": "vl-011-rain-city.svg", "split": "development",
+      "category": "scenes", "colors": ["blue", "charcoal"], "has_people": true,
+      "captions": [
+        {"caption_id": "vl-011-c1", "text": "Rain falls across a city skyline at night."},
+        {"caption_id": "vl-011-c2", "text": "People cross a wet urban street beneath blue lights."}
+      ],
+      "vector": [0.5, 0, 0.3, 1, 0, 0, 0.4, 1, 0.1, 0.7, 0.2, 0], "checksum": "AUTO"
+    },
+    {
+      "image_id": "vl-012", "filename": "vl-012-birds.svg", "split": "development",
+      "category": "animals", "colors": ["blue", "green"], "has_people": false,
+      "captions": [
+        {"caption_id": "vl-012-c1", "text": "Birds fly above a green wetland."},
+        {"caption_id": "vl-012-c2", "text": "A group of animals moves over shallow water."}
+      ],
+      "vector": [0, 1, 1, 0, 1, 0, 0, 0, 0.2, 0.8, 1, 0], "checksum": "AUTO"
+    }
+  ]
+}
+

@@ -1,0 +1,12 @@
+{
+  "model_version": "qualification-dual-encoder-v1",
+  "adapter": "deterministic-contract-adapter",
+  "dimension": 12,
+  "dtype": "float32",
+  "normalization": "l2",
+  "image_tower": "sealed-manifest-vectors",
+  "text_tower": "observable-term-projection",
+  "claim_boundary": "Not OpenAI CLIP or OpenCLIP output.",
+  "production_candidates": ["openai/clip-vit-base-patch32", "open_clip ViT-B-32/laion2b_s34b_b79k"]
+}
+

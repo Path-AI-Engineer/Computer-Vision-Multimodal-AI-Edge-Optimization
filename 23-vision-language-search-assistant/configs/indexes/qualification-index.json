@@ -1,0 +1,14 @@
+{
+  "index_version": "qualification-index-v1",
+  "metric": "normalized_inner_product",
+  "exact": "numpy-brute-force",
+  "approximate": "decimal-quantized-proxy",
+  "production_exact_candidate": "FAISS IndexFlatIP",
+  "production_approximate_candidates": ["FAISS HNSW", "FAISS IVF"],
+  "compatibility": {
+    "model_version": "qualification-dual-encoder-v1",
+    "dimension": 12,
+    "dtype": "float32"
+  }
+}
+

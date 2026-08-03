@@ -1,0 +1,11 @@
+{
+  "dataset": "Flickr8k",
+  "expected_images": 8092,
+  "captions_per_image": 5,
+  "required_fields": ["image_id", "caption_id", "split", "checksum"],
+  "required_split_policy": "canonical train/development/test",
+  "current_status": "LOCKED_NOT_ACQUIRED",
+  "qualification_dataset": "sealed-visual-retrieval-qualification-v1",
+  "test_use": "No official test result is claimed by this repository snapshot."
+}
+

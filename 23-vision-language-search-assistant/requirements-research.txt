@@ -1,0 +1,5 @@
+faiss-cpu==1.8.0.post1
+open-clip-torch==2.29.0
+torch==2.6.0
+torchvision==0.21.0
+

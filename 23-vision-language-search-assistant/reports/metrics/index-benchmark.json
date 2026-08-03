@@ -1,0 +1,10 @@
+{
+  "approximate_index": "decimal-quantized-proxy",
+  "approximate_latency_ms_mean": 0.1303,
+  "claim_boundary": "FAISS HNSW/IVF remains a production-candidate experiment.",
+  "embedding_memory_bytes": 576,
+  "exact_index": "numpy-brute-force",
+  "exact_latency_ms_mean": 0.1411,
+  "recall_at_5_vs_exact": 1.0,
+  "status": "QUALIFICATION_ONLY"
+}

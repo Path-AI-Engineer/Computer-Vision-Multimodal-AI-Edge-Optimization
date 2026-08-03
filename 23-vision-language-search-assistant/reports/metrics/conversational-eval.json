@@ -1,0 +1,9 @@
+{
+  "intent_accuracy": 1.0,
+  "session_persistence": "in-memory with TTL; no permanent memory",
+  "sessions": 3,
+  "status": "QUALIFICATION_ONLY",
+  "traceability_rate": 1.0,
+  "turns": 8,
+  "unsupported_answer_rate": 0.0
+}

@@ -1,0 +1,24 @@
+{
+  "protocol_id": "p23-qualification-eval-v1",
+  "status": "QUALIFICATION_ONLY",
+  "query_set": [
+    {"query_id": "q-001", "query": "dog running on beach", "target": "vl-001", "slice": "animals"},
+    {"query_id": "q-002", "query": "cyclists on city street", "target": "vl-002", "slice": "actions"},
+    {"query_id": "q-003", "query": "red kite in field", "target": "vl-003", "slice": "colors"},
+    {"query_id": "q-004", "query": "cat beside window", "target": "vl-004", "slice": "indoor"},
+    {"query_id": "q-005", "query": "boats on water at sunset", "target": "vl-005", "slice": "scenes"},
+    {"query_id": "q-006", "query": "fruit market food", "target": "vl-006", "slice": "food"},
+    {"query_id": "q-007", "query": "hiker at mountain lake", "target": "vl-007", "slice": "people"},
+    {"query_id": "q-008", "query": "train station at night", "target": "vl-008", "slice": "transport"},
+    {"query_id": "q-009", "query": "chef cooking indoors", "target": "vl-009", "slice": "food"},
+    {"query_id": "q-010", "query": "horse in green meadow", "target": "vl-010", "slice": "animals"},
+    {"query_id": "q-011", "query": "rainy city at night", "target": "vl-011", "slice": "scenes"},
+    {"query_id": "q-012", "query": "birds above wetland", "target": "vl-012", "slice": "actions"}
+  ],
+  "adversarial_queries": [
+    {"query_id": "adv-001", "query": "not a dog", "risk": "negation"},
+    {"query_id": "adv-002", "query": "person behind the left train", "risk": "spatial relation"},
+    {"query_id": "adv-003", "query": "quiet freedom", "risk": "abstract language"}
+  ]
+}
+

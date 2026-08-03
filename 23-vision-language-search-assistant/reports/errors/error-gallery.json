@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "finding": "The deterministic qualification encoder does not resolve this construct as compositional visual semantics.",
+      "mitigation": "Expose the limitation and require observable search terms.",
+      "query": "not a dog",
+      "query_id": "adv-001",
+      "risk": "negation"
+    },
+    {
+      "finding": "The deterministic qualification encoder does not resolve this construct as compositional visual semantics.",
+      "mitigation": "Expose the limitation and require observable search terms.",
+      "query": "person behind the left train",
+      "query_id": "adv-002",
+      "risk": "spatial relation"
+    },
+    {
+      "finding": "The deterministic qualification encoder does not resolve this construct as compositional visual semantics.",
+      "mitigation": "Expose the limitation and require observable search terms.",
+      "query": "quiet freedom",
+      "query_id": "adv-003",
+      "risk": "abstract language"
+    }
+  ],
+  "status": "QUALIFICATION_ONLY"
+}

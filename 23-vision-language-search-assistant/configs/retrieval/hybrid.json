@@ -1,0 +1,11 @@
+{
+  "modes": ["bm25", "semantic", "hybrid"],
+  "lexical_implementation": "TF-IDF caption aggregation",
+  "semantic_score": "normalized inner product",
+  "hybrid_alpha": 0.68,
+  "alpha_selection": "fixed qualification sweep",
+  "minimum_result_score": 0.08,
+  "top_k_default": 6,
+  "top_k_maximum": 12
+}
+

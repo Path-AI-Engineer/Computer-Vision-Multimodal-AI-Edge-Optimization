@@ -1,4 +1,11 @@
-# 23-multimodal-image-text-assistant
+# Retired placeholder — Project 23 moved
+
+The former `23-multimodal-image-text-assistant` outline is retained only as historical
+planning material. The implemented project is
+[`23-vision-language-search-assistant`](../23-vision-language-search-assistant/README.md).
+Do not add code or deployment assets to this placeholder.
+
+# Historical outline: multimodal-image-text-assistant
 
 ## 🧠 Descripción
 
