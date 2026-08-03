@@ -1,0 +1,32 @@
+{
+  "confusion": [
+    {
+      "count": 3,
+      "expected": 0,
+      "predicted": 0
+    },
+    {
+      "count": 3,
+      "expected": 1,
+      "predicted": 1
+    },
+    {
+      "count": 3,
+      "expected": 2,
+      "predicted": 2
+    },
+    {
+      "count": 3,
+      "expected": 3,
+      "predicted": 3
+    }
+  ],
+  "dataset": "sealed-edge-vision-qualification-v1",
+  "quality": {
+    "macro_f1": 1.0,
+    "top1_accuracy": 1.0,
+    "top5_accuracy": 1.0
+  },
+  "status": "QUALIFICATION_ONLY",
+  "variant_id": "onnx-fp32"
+}

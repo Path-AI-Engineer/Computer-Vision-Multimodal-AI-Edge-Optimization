@@ -1,0 +1,7 @@
+{
+  "method": "global_unstructured_l1",
+  "amounts": [0.25, 0.5, 0.7],
+  "remove_reparameterization_before_export": true,
+  "post_pruning_fine_tune_epochs": 3,
+  "speedup_claim_policy": "MEASURE_OBSERVED_LATENCY_SEPARATELY"
+}

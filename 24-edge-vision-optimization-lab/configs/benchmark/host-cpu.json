@@ -1,0 +1,11 @@
+{
+  "profile": "host_cpu",
+  "batch_sizes": [1, 4],
+  "threads": [1],
+  "warmup_iterations": 8,
+  "measured_iterations": 40,
+  "repetitions": 3,
+  "percentiles": [50, 90, 95],
+  "energy": "NOT_MEASURED",
+  "mix_hardware_results": false
+}

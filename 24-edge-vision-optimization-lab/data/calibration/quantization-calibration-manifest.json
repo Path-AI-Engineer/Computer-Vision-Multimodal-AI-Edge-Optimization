@@ -1,0 +1,12 @@
+{
+  "sample_ids": [
+    "edge-001",
+    "edge-002",
+    "edge-003",
+    "edge-004",
+    "edge-005",
+    "edge-006"
+  ],
+  "source_split": "train",
+  "status": "QUALIFICATION_ONLY"
+}

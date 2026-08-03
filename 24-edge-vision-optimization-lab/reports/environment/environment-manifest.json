@@ -1,0 +1,24 @@
+{
+  "architecture": "AMD64",
+  "batch_size": 1,
+  "claim_boundary": "This host measurement is not a physical edge-device benchmark.",
+  "energy": "NOT_MEASURED",
+  "environment_id": "host_cpu-qualification-v1",
+  "execution_provider": "NumPy CPU qualification adapter",
+  "hardware_model": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "input_dtype": "float32",
+  "input_size": [
+    1,
+    3,
+    224,
+    224
+  ],
+  "measured_iterations": 40,
+  "numpy": "1.26.4",
+  "os": "Windows-11-10.0.26200-SP0",
+  "power_mode": "NOT_OBSERVED",
+  "profile": "host_cpu",
+  "python": "3.12.7",
+  "threads": 1,
+  "warmup_iterations": 8
+}

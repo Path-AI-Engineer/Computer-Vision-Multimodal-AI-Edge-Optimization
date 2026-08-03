@@ -1,0 +1,8 @@
+{
+  "calibration_manifest": "data/calibration/quantization-calibration-manifest.json",
+  "qat_decision": "NOT_RUN_UNTIL_MOBILENET_BASELINE_IS_QUALIFIED",
+  "qualification_adapter": "MEASURED",
+  "research_execution": "NOT_RUN",
+  "status": "QUALIFICATION_ONLY",
+  "variant_id": "onnx-int8-ptq"
+}

@@ -1,0 +1,29 @@
+{
+  "artifact_path": "artifacts/onnx/onnx-fp32.npz",
+  "artifact_size_mb": 0.00162,
+  "claim_boundary": "Measured qualification adapter; not a MobileNet or ONNX Runtime result.",
+  "display_name": "ONNX FP32",
+  "effective_sparsity": 0.0,
+  "environment_id": "host_cpu-qualification-v1",
+  "latency": {
+    "mean_ms": 0.0014,
+    "p50_ms": 0.0014,
+    "p90_ms": 0.0015,
+    "p95_ms": 0.0015,
+    "samples": 40,
+    "throughput_per_second": 720720.72
+  },
+  "model_version": "qualification-linear-vision-v1",
+  "optimization": "graph export",
+  "parameters": 384,
+  "precision": "FP32",
+  "preprocessing_version": "generated-shape-features-v1",
+  "quality": {
+    "macro_f1": 1.0,
+    "top1_accuracy": 1.0,
+    "top5_accuracy": 1.0
+  },
+  "runtime": "ONNX Runtime",
+  "status": "APPROVED_QUALIFICATION",
+  "variant_id": "onnx-fp32"
+}

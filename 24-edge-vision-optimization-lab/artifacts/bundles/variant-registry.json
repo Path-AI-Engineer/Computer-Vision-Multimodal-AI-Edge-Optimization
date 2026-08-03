@@ -1,0 +1,172 @@
+{
+  "claim_boundary": "Only qualification adapters are approved. Research MobileNet/ONNX artifacts are not bundled.",
+  "environment_id": "host_cpu-qualification-v1",
+  "model_version": "qualification-linear-vision-v1",
+  "preprocessing_version": "generated-shape-features-v1",
+  "registry_id": "edge-vision-qualification-registry-v1",
+  "variants": [
+    {
+      "artifact_path": "artifacts/pytorch/pytorch-fp32.npz",
+      "artifact_size_mb": 0.00162,
+      "claim_boundary": "Measured qualification adapter; not a MobileNet or ONNX Runtime result.",
+      "display_name": "PyTorch FP32",
+      "effective_sparsity": 0.0,
+      "environment_id": "host_cpu-qualification-v1",
+      "latency": {
+        "mean_ms": 0.0015,
+        "p50_ms": 0.0014,
+        "p90_ms": 0.0015,
+        "p95_ms": 0.0016,
+        "samples": 40,
+        "throughput_per_second": 686106.35
+      },
+      "model_version": "qualification-linear-vision-v1",
+      "optimization": "baseline",
+      "parameters": 384,
+      "precision": "FP32",
+      "preprocessing_version": "generated-shape-features-v1",
+      "quality": {
+        "macro_f1": 1.0,
+        "top1_accuracy": 1.0,
+        "top5_accuracy": 1.0
+      },
+      "runtime": "PyTorch",
+      "status": "APPROVED_QUALIFICATION",
+      "variant_id": "pytorch-fp32"
+    },
+    {
+      "artifact_path": "artifacts/pytorch/pytorch-pruned-unstructured.npz",
+      "artifact_size_mb": 0.00108,
+      "claim_boundary": "Measured qualification adapter; not a MobileNet or ONNX Runtime result.",
+      "display_name": "Pruned FP32",
+      "effective_sparsity": 0.5,
+      "environment_id": "host_cpu-qualification-v1",
+      "latency": {
+        "mean_ms": 0.0014,
+        "p50_ms": 0.0014,
+        "p90_ms": 0.0014,
+        "p95_ms": 0.0015,
+        "samples": 40,
+        "throughput_per_second": 704225.35
+      },
+      "model_version": "qualification-linear-vision-v1",
+      "optimization": "50% unstructured",
+      "parameters": 384,
+      "precision": "FP32",
+      "preprocessing_version": "generated-shape-features-v1",
+      "quality": {
+        "macro_f1": 0.9143,
+        "top1_accuracy": 0.9167,
+        "top5_accuracy": 1.0
+      },
+      "runtime": "PyTorch",
+      "status": "APPROVED_QUALIFICATION",
+      "variant_id": "pytorch-pruned-unstructured"
+    },
+    {
+      "artifact_path": "artifacts/pytorch/structured-channel-experimental.npz",
+      "artifact_size_mb": 0.00095,
+      "claim_boundary": "Measured qualification adapter; not a MobileNet or ONNX Runtime result.",
+      "display_name": "Structured channel proxy",
+      "effective_sparsity": 0.0,
+      "environment_id": "host_cpu-qualification-v1",
+      "latency": {
+        "mean_ms": 0.0011,
+        "p50_ms": 0.0011,
+        "p90_ms": 0.0012,
+        "p95_ms": 0.0013,
+        "samples": 40,
+        "throughput_per_second": 884955.75
+      },
+      "model_version": "qualification-linear-vision-v1",
+      "optimization": "50% channels",
+      "parameters": 192,
+      "precision": "FP32",
+      "preprocessing_version": "generated-shape-features-v1",
+      "quality": {
+        "macro_f1": 0.9143,
+        "top1_accuracy": 0.9167,
+        "top5_accuracy": 1.0
+      },
+      "runtime": "PyTorch",
+      "status": "EXPERIMENTAL_QUALIFICATION",
+      "variant_id": "structured-channel-experimental"
+    },
+    {
+      "artifact_path": "artifacts/onnx/onnx-fp32.npz",
+      "artifact_size_mb": 0.00162,
+      "claim_boundary": "Measured qualification adapter; not a MobileNet or ONNX Runtime result.",
+      "display_name": "ONNX FP32",
+      "effective_sparsity": 0.0,
+      "environment_id": "host_cpu-qualification-v1",
+      "latency": {
+        "mean_ms": 0.0014,
+        "p50_ms": 0.0014,
+        "p90_ms": 0.0015,
+        "p95_ms": 0.0015,
+        "samples": 40,
+        "throughput_per_second": 720720.72
+      },
+      "model_version": "qualification-linear-vision-v1",
+      "optimization": "graph export",
+      "parameters": 384,
+      "precision": "FP32",
+      "preprocessing_version": "generated-shape-features-v1",
+      "quality": {
+        "macro_f1": 1.0,
+        "top1_accuracy": 1.0,
+        "top5_accuracy": 1.0
+      },
+      "runtime": "ONNX Runtime",
+      "status": "APPROVED_QUALIFICATION",
+      "variant_id": "onnx-fp32"
+    },
+    {
+      "artifact_path": "artifacts/int8/onnx-int8-ptq.npz",
+      "artifact_size_mb": 0.00049,
+      "claim_boundary": "Measured qualification adapter; not a MobileNet or ONNX Runtime result.",
+      "display_name": "ONNX INT8 PTQ",
+      "effective_sparsity": 0.0,
+      "environment_id": "host_cpu-qualification-v1",
+      "latency": {
+        "mean_ms": 0.0033,
+        "p50_ms": 0.0032,
+        "p90_ms": 0.0034,
+        "p95_ms": 0.0035,
+        "samples": 40,
+        "throughput_per_second": 307455.8
+      },
+      "model_version": "qualification-linear-vision-v1",
+      "optimization": "static PTQ",
+      "parameters": 384,
+      "precision": "INT8",
+      "preprocessing_version": "generated-shape-features-v1",
+      "quality": {
+        "macro_f1": 0.9143,
+        "top1_accuracy": 0.9167,
+        "top5_accuracy": 1.0
+      },
+      "runtime": "ONNX Runtime",
+      "status": "APPROVED_QUALIFICATION",
+      "variant_id": "onnx-int8-ptq"
+    },
+    {
+      "artifact_path": null,
+      "artifact_size_mb": null,
+      "claim_boundary": "Not run: the research MobileNet baseline is not yet qualified.",
+      "display_name": "QAT INT8",
+      "effective_sparsity": null,
+      "environment_id": "host_cpu-qualification-v1",
+      "latency": null,
+      "model_version": "qualification-linear-vision-v1",
+      "optimization": "quantization-aware training",
+      "parameters": null,
+      "precision": "INT8",
+      "preprocessing_version": "generated-shape-features-v1",
+      "quality": null,
+      "runtime": "PyTorch / ONNX Runtime",
+      "status": "NOT_RUN",
+      "variant_id": "qat-int8"
+    }
+  ]
+}

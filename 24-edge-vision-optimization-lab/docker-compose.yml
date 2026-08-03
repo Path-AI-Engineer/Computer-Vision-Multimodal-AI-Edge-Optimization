@@ -1,0 +1,24 @@
+services:
+  edge-vision-benchmark-console:
+    build:
+      context: .
+      dockerfile: docker/production.Dockerfile
+    environment:
+      EDGE_VISION_ROOT: /app
+      MAX_UPLOAD_BYTES: "6291456"
+      PORT: "8080"
+    ports:
+      - "8024:8080"
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,noexec,nosuid
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/ready',timeout=2)"]
+      interval: 15s
+      timeout: 3s
+      retries: 4
+      start_period: 15s

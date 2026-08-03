@@ -1,0 +1,10 @@
+{
+  "dataset": "Oxford-IIIT Pet",
+  "official_image_count": 7349,
+  "class_count": 37,
+  "status": "LOCKED_NOT_ACQUIRED",
+  "selection_split": "validation",
+  "test_policy": "LOCKED_UNTIL_CONFIGURATION_FREEZE",
+  "qualification_fixture": "sealed-edge-vision-qualification-v1",
+  "claim_boundary": "Qualification samples are generated fixtures, not Oxford-IIIT Pet images."
+}

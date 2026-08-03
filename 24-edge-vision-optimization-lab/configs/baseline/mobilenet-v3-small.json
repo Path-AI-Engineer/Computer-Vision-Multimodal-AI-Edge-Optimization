@@ -1,0 +1,11 @@
+{
+  "architecture": "mobilenet_v3_small",
+  "weights": "MobileNet_V3_Small_Weights.DEFAULT",
+  "class_count": 37,
+  "seed": 2401,
+  "selection_split": "validation",
+  "test_policy": "LOCKED_UNTIL_CONFIGURATION_FREEZE",
+  "input_size": [3, 224, 224],
+  "normalization": "checkpoint-provided",
+  "status": "RESEARCH_PROTOCOL_VERSIONED_NOT_EXECUTED"
+}

@@ -1,0 +1,25 @@
+{
+  "comparisons": [
+    {
+      "absolute_tolerance": 0.05,
+      "candidate_variant": "onnx-fp32",
+      "max_absolute_error": 0.0,
+      "mean_absolute_error": 0.0,
+      "passed": true,
+      "reference_variant": "pytorch-fp32",
+      "samples": 12,
+      "top1_agreement": 1.0
+    },
+    {
+      "absolute_tolerance": 0.75,
+      "candidate_variant": "onnx-int8-ptq",
+      "max_absolute_error": 1.754853,
+      "mean_absolute_error": 0.071559,
+      "passed": false,
+      "reference_variant": "pytorch-fp32",
+      "samples": 12,
+      "top1_agreement": 0.9167
+    }
+  ],
+  "status": "QUALIFICATION_ONLY"
+}

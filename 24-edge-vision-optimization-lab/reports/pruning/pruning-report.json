@@ -1,0 +1,8 @@
+{
+  "effective_sparsity": 0.5,
+  "interpretation": "Dense NumPy kernels do not guarantee acceleration from zero weights.",
+  "observed_speedup": 1.0,
+  "status": "QUALIFICATION_ONLY",
+  "target_sparsity": 0.5,
+  "variant_id": "pytorch-pruned-unstructured"
+}

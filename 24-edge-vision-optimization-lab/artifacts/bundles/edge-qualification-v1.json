@@ -1,0 +1,507 @@
+{
+  "benchmark": "reports/latency/benchmark-summary.json",
+  "bundle_id": "edge-vision-qualification-v1",
+  "class_names": [
+    "abyssinian",
+    "beagle",
+    "ragdoll",
+    "samoyed"
+  ],
+  "pareto": "reports/pareto/pareto-frontier.json",
+  "registry": "artifacts/bundles/variant-registry.json",
+  "sample_logits": {
+    "onnx-fp32": {
+      "edge-001": [
+        2.4,
+        -0.602195,
+        -0.786428,
+        -0.436399
+      ],
+      "edge-002": [
+        -0.409423,
+        2.4,
+        -0.889156,
+        -0.638163
+      ],
+      "edge-003": [
+        -0.686643,
+        -0.582175,
+        2.4,
+        -0.969224
+      ],
+      "edge-004": [
+        -0.813716,
+        -0.503481,
+        -0.85897,
+        2.4
+      ],
+      "edge-005": [
+        2.4,
+        -0.93803,
+        -0.648878,
+        -0.746315
+      ],
+      "edge-006": [
+        -0.502423,
+        2.4,
+        -0.900552,
+        -0.900402
+      ],
+      "edge-007": [
+        -0.874837,
+        -0.616828,
+        2.4,
+        -0.785028
+      ],
+      "edge-008": [
+        -0.467257,
+        -0.613843,
+        -0.972153,
+        2.4
+      ],
+      "edge-009": [
+        2.4,
+        -1.097203,
+        -0.940061,
+        -0.996891
+      ],
+      "edge-010": [
+        -0.859845,
+        2.4,
+        -0.67151,
+        -0.539162
+      ],
+      "edge-011": [
+        -0.830452,
+        -0.569217,
+        2.4,
+        -0.844853
+      ],
+      "edge-012": [
+        -0.609136,
+        -0.988809,
+        -0.82333,
+        2.4
+      ]
+    },
+    "onnx-int8-ptq": {
+      "edge-001": [
+        2.4,
+        -0.602195,
+        -0.786428,
+        -0.436399
+      ],
+      "edge-002": [
+        -0.409423,
+        2.4,
+        -0.889156,
+        -0.638163
+      ],
+      "edge-003": [
+        -0.686643,
+        -0.582175,
+        2.4,
+        -0.969224
+      ],
+      "edge-004": [
+        -0.813716,
+        -0.503481,
+        -0.85897,
+        2.4
+      ],
+      "edge-005": [
+        2.4,
+        -0.93803,
+        -0.648878,
+        -0.746315
+      ],
+      "edge-006": [
+        -0.502423,
+        2.4,
+        -0.900552,
+        -0.900402
+      ],
+      "edge-007": [
+        -0.874837,
+        -0.616828,
+        2.4,
+        -0.785028
+      ],
+      "edge-008": [
+        -0.467257,
+        -0.613843,
+        -0.972153,
+        2.4
+      ],
+      "edge-009": [
+        2.4,
+        -1.097203,
+        -0.940061,
+        -0.996891
+      ],
+      "edge-010": [
+        -0.859845,
+        2.4,
+        -0.67151,
+        -0.539162
+      ],
+      "edge-011": [
+        -0.830452,
+        -0.569217,
+        0.72,
+        0.91
+      ],
+      "edge-012": [
+        -0.609136,
+        -0.988809,
+        -0.82333,
+        2.4
+      ]
+    },
+    "pytorch-fp32": {
+      "edge-001": [
+        2.4,
+        -0.602195,
+        -0.786428,
+        -0.436399
+      ],
+      "edge-002": [
+        -0.409423,
+        2.4,
+        -0.889156,
+        -0.638163
+      ],
+      "edge-003": [
+        -0.686643,
+        -0.582175,
+        2.4,
+        -0.969224
+      ],
+      "edge-004": [
+        -0.813716,
+        -0.503481,
+        -0.85897,
+        2.4
+      ],
+      "edge-005": [
+        2.4,
+        -0.93803,
+        -0.648878,
+        -0.746315
+      ],
+      "edge-006": [
+        -0.502423,
+        2.4,
+        -0.900552,
+        -0.900402
+      ],
+      "edge-007": [
+        -0.874837,
+        -0.616828,
+        2.4,
+        -0.785028
+      ],
+      "edge-008": [
+        -0.467257,
+        -0.613843,
+        -0.972153,
+        2.4
+      ],
+      "edge-009": [
+        2.4,
+        -1.097203,
+        -0.940061,
+        -0.996891
+      ],
+      "edge-010": [
+        -0.859845,
+        2.4,
+        -0.67151,
+        -0.539162
+      ],
+      "edge-011": [
+        -0.830452,
+        -0.569217,
+        2.4,
+        -0.844853
+      ],
+      "edge-012": [
+        -0.609136,
+        -0.988809,
+        -0.82333,
+        2.4
+      ]
+    },
+    "pytorch-pruned-unstructured": {
+      "edge-001": [
+        2.4,
+        -0.602195,
+        -0.786428,
+        -0.436399
+      ],
+      "edge-002": [
+        -0.409423,
+        2.4,
+        -0.889156,
+        -0.638163
+      ],
+      "edge-003": [
+        -0.686643,
+        -0.582175,
+        2.4,
+        -0.969224
+      ],
+      "edge-004": [
+        -0.813716,
+        -0.503481,
+        -0.85897,
+        2.4
+      ],
+      "edge-005": [
+        2.4,
+        -0.93803,
+        -0.648878,
+        -0.746315
+      ],
+      "edge-006": [
+        -0.502423,
+        2.4,
+        -0.900552,
+        -0.900402
+      ],
+      "edge-007": [
+        -0.874837,
+        -0.616828,
+        2.4,
+        -0.785028
+      ],
+      "edge-008": [
+        0.9,
+        -0.613843,
+        -0.972153,
+        0.6
+      ],
+      "edge-009": [
+        2.4,
+        -1.097203,
+        -0.940061,
+        -0.996891
+      ],
+      "edge-010": [
+        -0.859845,
+        2.4,
+        -0.67151,
+        -0.539162
+      ],
+      "edge-011": [
+        -0.830452,
+        -0.569217,
+        2.4,
+        -0.844853
+      ],
+      "edge-012": [
+        -0.609136,
+        -0.988809,
+        -0.82333,
+        2.4
+      ]
+    },
+    "structured-channel-experimental": {
+      "edge-001": [
+        2.4,
+        -0.602195,
+        -0.786428,
+        -0.436399
+      ],
+      "edge-002": [
+        -0.409423,
+        2.4,
+        -0.889156,
+        -0.638163
+      ],
+      "edge-003": [
+        -0.686643,
+        -0.582175,
+        2.4,
+        -0.969224
+      ],
+      "edge-004": [
+        -0.813716,
+        -0.503481,
+        -0.85897,
+        2.4
+      ],
+      "edge-005": [
+        2.4,
+        -0.93803,
+        -0.648878,
+        -0.746315
+      ],
+      "edge-006": [
+        -0.502423,
+        0.5,
+        -0.900552,
+        0.85
+      ],
+      "edge-007": [
+        -0.874837,
+        -0.616828,
+        2.4,
+        -0.785028
+      ],
+      "edge-008": [
+        -0.467257,
+        -0.613843,
+        -0.972153,
+        2.4
+      ],
+      "edge-009": [
+        2.4,
+        -1.097203,
+        -0.940061,
+        -0.996891
+      ],
+      "edge-010": [
+        -0.859845,
+        2.4,
+        -0.67151,
+        -0.539162
+      ],
+      "edge-011": [
+        -0.830452,
+        -0.569217,
+        2.4,
+        -0.844853
+      ],
+      "edge-012": [
+        -0.609136,
+        -0.988809,
+        -0.82333,
+        2.4
+      ]
+    }
+  },
+  "samples": [
+    {
+      "checksum": "3cf345ca1e7a6617f3b9f7bcc50972ade01a3d87834ea99ac728050956bb9a10",
+      "class_id": 0,
+      "image_url": "/assets/samples/edge-001.svg",
+      "label": "abyssinian",
+      "path": "data/samples/edge-001.svg",
+      "sample_id": "edge-001",
+      "source": "generated qualification fixture",
+      "split": "train"
+    },
+    {
+      "checksum": "6c8f82e7d50ad27fa4c98e61489801267066db5482f227cf05da34bc0fa1c48b",
+      "class_id": 1,
+      "image_url": "/assets/samples/edge-002.svg",
+      "label": "beagle",
+      "path": "data/samples/edge-002.svg",
+      "sample_id": "edge-002",
+      "source": "generated qualification fixture",
+      "split": "train"
+    },
+    {
+      "checksum": "df47e3aab2418ba725ab61bc963f8c9655f3c0467865cb97442267bfb74651e7",
+      "class_id": 2,
+      "image_url": "/assets/samples/edge-003.svg",
+      "label": "ragdoll",
+      "path": "data/samples/edge-003.svg",
+      "sample_id": "edge-003",
+      "source": "generated qualification fixture",
+      "split": "train"
+    },
+    {
+      "checksum": "cb3e19f1340e293424abe1a7d5e87999f919bc2da764a1c5a7de51132f31a50d",
+      "class_id": 3,
+      "image_url": "/assets/samples/edge-004.svg",
+      "label": "samoyed",
+      "path": "data/samples/edge-004.svg",
+      "sample_id": "edge-004",
+      "source": "generated qualification fixture",
+      "split": "train"
+    },
+    {
+      "checksum": "453ca950f4b869af48fd6927c0a68d7cd89b2c382aaecf99f85a6b4fdde64e8e",
+      "class_id": 0,
+      "image_url": "/assets/samples/edge-005.svg",
+      "label": "abyssinian",
+      "path": "data/samples/edge-005.svg",
+      "sample_id": "edge-005",
+      "source": "generated qualification fixture",
+      "split": "train"
+    },
+    {
+      "checksum": "9426a5c00dfed9adfb5eaa9309e639884223cb184caa96eda7d518a06a3e83c9",
+      "class_id": 1,
+      "image_url": "/assets/samples/edge-006.svg",
+      "label": "beagle",
+      "path": "data/samples/edge-006.svg",
+      "sample_id": "edge-006",
+      "source": "generated qualification fixture",
+      "split": "train"
+    },
+    {
+      "checksum": "8df1e116c28d90f0a631faf4818c04a3943efb98498faf7a8125252df5f5896e",
+      "class_id": 2,
+      "image_url": "/assets/samples/edge-007.svg",
+      "label": "ragdoll",
+      "path": "data/samples/edge-007.svg",
+      "sample_id": "edge-007",
+      "source": "generated qualification fixture",
+      "split": "validation"
+    },
+    {
+      "checksum": "8a89fcf86759668acfd000accc73ea7fc71e5e1880c731e3b7a64473a6de142a",
+      "class_id": 3,
+      "image_url": "/assets/samples/edge-008.svg",
+      "label": "samoyed",
+      "path": "data/samples/edge-008.svg",
+      "sample_id": "edge-008",
+      "source": "generated qualification fixture",
+      "split": "validation"
+    },
+    {
+      "checksum": "c812d6e19c8dba34b56304f2793b58a0d26d574aaa4ad3c24e7e4b8983e014b9",
+      "class_id": 0,
+      "image_url": "/assets/samples/edge-009.svg",
+      "label": "abyssinian",
+      "path": "data/samples/edge-009.svg",
+      "sample_id": "edge-009",
+      "source": "generated qualification fixture",
+      "split": "validation"
+    },
+    {
+      "checksum": "8f83d44c1d3ff810112681b26d80e803da888d56f013582903819c25b364c9ce",
+      "class_id": 1,
+      "image_url": "/assets/samples/edge-010.svg",
+      "label": "beagle",
+      "path": "data/samples/edge-010.svg",
+      "sample_id": "edge-010",
+      "source": "generated qualification fixture",
+      "split": "test"
+    },
+    {
+      "checksum": "768f9985a377041a34a547f25149994c91bc4075a3909c5d8c50b7e7d0a9a69c",
+      "class_id": 2,
+      "image_url": "/assets/samples/edge-011.svg",
+      "label": "ragdoll",
+      "path": "data/samples/edge-011.svg",
+      "sample_id": "edge-011",
+      "source": "generated qualification fixture",
+      "split": "test"
+    },
+    {
+      "checksum": "7c6d364cdc8898e75b6e5b568105ee52ec41430c10a9f587edffc7f584c94574",
+      "class_id": 3,
+      "image_url": "/assets/samples/edge-012.svg",
+      "label": "samoyed",
+      "path": "data/samples/edge-012.svg",
+      "sample_id": "edge-012",
+      "source": "generated qualification fixture",
+      "split": "test"
+    }
+  ],
+  "status": "QUALIFICATION_ONLY"
+}

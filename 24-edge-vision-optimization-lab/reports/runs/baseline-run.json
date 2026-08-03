@@ -1,0 +1,9 @@
+{
+  "model_version": "qualification-linear-vision-v1",
+  "run_id": "p24-qualification-baseline-v1",
+  "seed": 2401,
+  "selection_split": "validation",
+  "status": "QUALIFICATION_ONLY",
+  "test_policy": "LOCKED_UNTIL_CONFIGURATION_FREEZE",
+  "variant_id": "pytorch-fp32"
+}

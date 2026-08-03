@@ -1,374 +1,127 @@
-# 24-edge-vision-optimization-lab
+# Edge Vision Benchmark Console
+
+Project 24 closes Plan 4 with an evidence-first laboratory for visual inference optimization.
+It compares quality, latency, artifact size, sparsity and runtime parity without treating a
+smaller file, more zero weights or a successful export as automatic acceleration.
 
-## 🧠 Descripción
+## Product surface
 
-Lab técnico para optimizar un modelo visual pensando en **inferencia ligera**, latencia y uso en entornos limitados.
+- Decision Desk with a calculated macro-F1, latency and size Pareto frontier.
+- Inference Lab over public generated fixtures and approved registry variants.
+- Variant Registry with runtime, precision, preprocessing, artifact and status.
+- Benchmark Matrix with p50, p90, p95, throughput, quality, size and sparsity.
+- Evidence Room with environment controls, parity results and retained negative findings.
+- FastAPI resources and one React/Vite console backed by the same immutable bundle.
 
-Este proyecto cierra el:
+## Evidence boundary
 
-```txt
-Plan 4 — Computer Vision, Multimodal AI & Edge Optimization
-```
+The included sealed qualification bundle contains 12 generated visual fixtures, four classes,
+five measured NumPy adapter variants and one explicit NOT_RUN QAT variant. It validates the
+data, benchmark, registry, API and interface contracts reproducibly on the current host.
 
-y forma parte del conjunto:
-
-```txt
-Percepción Visual, Multimodalidad e Inferencia Ligera
-```
-
-Este proyecto continúa el:
-
-```txt
-23-multimodal-image-text-assistant
-```
-
-pero cambia el enfoque:
-
-```txt
-Antes:
-combinar imagen y texto
-
-Ahora:
-hacer que modelos visuales sean más eficientes para inferencia real
-```
+It is not:
 
-La idea central es entender que un modelo no solo debe ser preciso.
+- the 7,349-image Oxford-IIIT Pet benchmark;
+- MobileNetV3-Small training or final test evidence;
+- a PyTorch pruning, ONNX Runtime or static PTQ performance claim;
+- a Raspberry Pi, mobile, NPU or other physical edge benchmark.
 
-También debe ser usable.
-
-```txt
-precisión
-+ latencia
-+ tamaño
-+ costo
-+ entorno de ejecución
-= utilidad real
-```
+Research dependencies and protocols are versioned separately. The final model variants can
+replace the qualification adapters only after producing compatible manifests and passing
+quality, parity and paired benchmark gates.
 
----
+## Architecture
 
-## 🎯 Objetivo
+    project-owned dataset manifest
+      -> baseline and optimization protocols
+      -> variant artifact + manifest
+      -> quality and paired latency evidence
+      -> parity and Pareto policy
+      -> immutable registry
+      -> bounded predictor
+      -> FastAPI
+      -> React benchmark console
 
-Crear un lab de optimización visual donde se mida y compare el rendimiento de modelos para inferencia.
+Primary responsibilities:
 
-El objetivo técnico es aprender:
+- edge_ai/data: dataset identity, checksums and disjoint splits.
+- edge_ai/models, training and pruning: research execution boundaries.
+- edge_ai/benchmark: raw timings, percentiles, environment and Pareto.
+- edge_ai/export and quantization: parity and calibration contracts.
+- edge_ai/registry and inference: online compatibility and approved prediction.
+- artifacts and reports: generated, versioned evidence.
+- backend and frontend: API and decision console.
 
-* Latencia.
-* Throughput.
-* Tamaño de modelo.
-* Tiempo de inferencia.
-* Modelos ligeros.
-* Quantization conceptual.
-* Pruning conceptual.
-* ONNX conceptual.
-* Trade-off precisión vs velocidad.
-* Preparación para Edge AI.
+## Run locally
 
----
+From PowerShell:
 
-## 👤 Usuario objetivo
+    Set-Location "C:\JeanLoa\Path-AI-Engineer\Computer-Vision-Multimodal-AI-Edge-Optimization\24-edge-vision-optimization-lab"
 
-* AI Engineer en formación.
-* Estudiante de Computer Vision.
-* Persona interesada en Edge AI.
-* Futuro constructor de sistemas de robótica.
-* Futuro constructor de cámaras inteligentes.
-* Futuro constructor de sistemas embebidos.
-* Reclutador técnico interesado en optimización de inferencia.
+    if (-not (Test-Path ".venv\Scripts\python.exe")) {
+        py -3.12 -m venv .venv
+    }
 
----
+    .\.venv\Scripts\Activate.ps1
+    python -m pip install --upgrade pip
+    python -m pip install -r requirements.txt -r requirements-dev.txt
+    python scripts\build_qualification_bundle.py
+    python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8024 --reload
 
-## 🧱 Arquitectura esperada
+In another PowerShell terminal:
 
-```txt
-Modelo visual base
-      ↓
-Medición baseline
-      ↓
-Latencia
-      ↓
-Tamaño del modelo
-      ↓
-Modelo ligero
-      ↓
-Comparación
-      ↓
-Optimización conceptual
-      ↓
-Edge readiness report
-```
+    Set-Location "C:\JeanLoa\Path-AI-Engineer\Computer-Vision-Multimodal-AI-Edge-Optimization\24-edge-vision-optimization-lab\frontend"
+    npm install
+    npm run dev
 
----
+Open:
 
-## 🔁 Flujo técnico
+- Console: http://127.0.0.1:5174/app/
+- API documentation: http://127.0.0.1:8024/docs
+- Readiness: http://127.0.0.1:8024/ready
 
-```txt
-trained vision model
-   ↓
-baseline inference test
-   ↓
-latency measurement
-   ↓
-model size analysis
-   ↓
-lightweight model comparison
-   ↓
-quantization concept
-   ↓
-onnx export concept
-   ↓
-edge readiness report
-```
+## API
 
----
+| Method | Route | Responsibility |
+|---|---|---|
+| GET | /health | Process liveness |
+| GET | /ready | Registry and bundle readiness |
+| GET | /v1/variants | Complete immutable registry |
+| GET | /v1/variants/{id} | One variant contract |
+| GET | /v1/samples | Public qualification fixtures |
+| POST | /v1/predictions?variant_id= | Approved sample inference |
+| GET | /v1/benchmarks/summary | Persisted paired measurements |
+| GET | /v1/benchmarks/pareto | Derived frontier and recommendations |
+| GET | /v1/benchmarks/environment | Hardware/runtime controls |
+| GET | /v1/parity/summary | Oracle parity evidence |
+| GET | /v1/pruning/summary | Sparsity versus observed speedup |
 
-## 🧩 Módulos
+## Quality and deployment
 
-### Módulo 1 — Inference Baseline
+Run the complete gate:
 
-Medir el rendimiento base de un modelo visual.
+    .\scripts\quality_gate.ps1
 
-Incluye:
+Docker:
 
-* Modelo inicial.
-* Imagen de prueba.
-* Tiempo de inferencia.
-* Batch size.
-* CPU vs GPU si aplica.
-* Resultado de referencia.
+    docker compose up --build
 
-Pregunta central:
+AWS preparation:
 
-```txt
-¿Cuánto tarda mi modelo actual en responder?
-```
+    .\infra\aws\release.ps1
 
----
+AWS deployment occurs only with explicit ValidateAws or Apply parameters. Project 24 uses
+immutable ECR repository plan-04/p24-edge-vision-console and semantic App Runner service
+ai-04-p24-edge-vision-console.
 
-### Módulo 2 — Latency Measurement
+## Responsible interpretation
 
-Medir latencia de forma más ordenada.
+- Sparsity is distinct from measured speedup.
+- File size is distinct from peak memory.
+- INT8 is accepted only after quality and parity evidence.
+- Results from different machines never share one comparison.
+- host_cpu and edge_proxy never imply physical edge hardware.
+- Energy remains NOT_MEASURED without a reliable meter.
+- Failed parity and NOT_RUN variants remain visible.
 
-Incluye:
-
-* Tiempo promedio.
-* Múltiples ejecuciones.
-* Warm-up.
-* Percentiles si aplica.
-* Variación.
-* Comparación de escenarios.
-
-Pregunta central:
-
-```txt
-¿Qué tan estable y rápida es la inferencia?
-```
-
----
-
-### Módulo 3 — Model Size Analysis
-
-Analizar tamaño y costo del modelo.
-
-Incluye:
-
-* Tamaño en MB.
-* Número de parámetros.
-* Memoria requerida.
-* Costo de carga.
-* Costo de almacenamiento.
-* Impacto en despliegue.
-
-Pregunta central:
-
-```txt
-¿Qué tan pesado es mi modelo para un entorno limitado?
-```
-
----
-
-### Módulo 4 — Lightweight Model Comparison
-
-Comparar contra un modelo más ligero.
-
-Incluye:
-
-* MobileNet.
-* EfficientNet pequeña.
-* Modelo reducido.
-* Precisión.
-* Latencia.
-* Tamaño.
-* Trade-off.
-
-Pregunta central:
-
-```txt
-¿Qué pierdo y qué gano al usar un modelo más ligero?
-```
-
----
-
-### Módulo 5 — Quantization Concept
-
-Entender quantization de forma conceptual.
-
-Incluye:
-
-* FP32.
-* INT8 conceptual.
-* Reducción de tamaño.
-* Posible mejora de velocidad.
-* Posible pérdida de precisión.
-* Uso en edge.
-
-Pregunta central:
-
-```txt
-¿Cómo puedo hacer un modelo más ligero cambiando la precisión numérica?
-```
-
----
-
-### Módulo 6 — ONNX Export Concept
-
-Entender ONNX como formato de interoperabilidad.
-
-Incluye:
-
-* Exportación conceptual.
-* Separar entrenamiento de inferencia.
-* Runtime optimizado.
-* Portabilidad.
-* Uso en producción.
-* Limitaciones.
-
-Pregunta central:
-
-```txt
-¿Cómo preparo un modelo para ejecutarlo fuera del entorno original de entrenamiento?
-```
-
----
-
-### Módulo 7 — Edge Readiness Report
-
-Crear un reporte de preparación para Edge AI.
-
-Incluye:
-
-* Latencia.
-* Tamaño.
-* Precisión.
-* Entorno objetivo.
-* Trade-offs.
-* Recomendación final.
-* Limitaciones.
-
-Pregunta central:
-
-```txt
-¿Este modelo está listo para ejecutarse en un entorno limitado?
-```
-
----
-
-## 🧪 Labs
-
-### tec-labs
-
-* `tec-inference-baseline-lab`
-* `tec-inference-latency-lab`
-* `tec-model-size-analysis-lab`
-* `tec-lightweight-cnn-comparison-lab`
-* `tec-quantization-concept-lab`
-* `tec-onnx-export-concept-lab`
-* `tec-edge-readiness-report-lab`
-
----
-
-## 📊 Métricas / señales de análisis
-
-Métricas principales:
-
-* Latencia promedio.
-* Latencia mínima.
-* Latencia máxima.
-* Throughput.
-* Tamaño del modelo.
-* Número de parámetros.
-* Memoria aproximada.
-* Accuracy antes/después.
-* Tiempo de carga.
-* Tiempo de inferencia por imagen.
-
-Señales de análisis:
-
-* El modelo ligero responde más rápido.
-* El modelo ligero pierde precisión.
-* El modelo pesado no conviene para edge.
-* La optimización mejora velocidad.
-* El trade-off está documentado.
-* El entorno objetivo está considerado.
-
-Importante:
-
-```txt
-Un modelo más preciso no siempre es mejor si no puede ejecutarse donde se necesita.
-```
-
----
-
-## 📌 Próximos pasos
-
-* Elegir modelo visual base.
-* Preparar imágenes de prueba.
-* Medir inferencia baseline.
-* Repetir medición varias veces.
-* Calcular latencia promedio.
-* Medir tamaño del modelo.
-* Revisar número de parámetros.
-* Comparar contra modelo ligero.
-* Evaluar precisión vs velocidad.
-* Estudiar quantization conceptualmente.
-* Estudiar ONNX conceptualmente.
-* Crear reporte edge readiness.
-* Documentar limitaciones.
-* Grabar demo o explicación corta.
-* Actualizar LinkedIn y CV.
-
----
-
-## ✅ Entregable final
-
-Al terminar este proyecto debe existir:
-
-* Modelo visual base.
-* Medición de latencia.
-* Medición de tamaño.
-* Comparación con modelo ligero.
-* Tabla de resultados.
-* Explicación de trade-offs.
-* Notas de quantization.
-* Notas de ONNX.
-* Edge readiness report.
-* README técnico.
-* Labs documentados.
-* Conclusión sobre optimización de inferencia.
-
----
-
-## 🧭 Regla final
-
-```txt
-Un modelo no termina cuando predice bien.
-Termina cuando puede ejecutarse bien donde será usado.
-
-Precisión sin velocidad puede no servir.
-Velocidad sin precisión tampoco.
-El trabajo real está en el trade-off.
-```
-
-Este proyecto no busca desplegar en hardware real todavía.
-
-Busca entender cómo pensar modelos visuales para inferencia eficiente y Edge AI.
+> An optimization exists only when it reduces a measured cost without hiding what it sacrifices.

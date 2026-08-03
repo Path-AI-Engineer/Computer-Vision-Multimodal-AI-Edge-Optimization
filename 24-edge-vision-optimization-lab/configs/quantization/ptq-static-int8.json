@@ -1,0 +1,9 @@
+{
+  "method": "onnxruntime_static_ptq",
+  "calibration_source_split": "train",
+  "calibration_samples": 256,
+  "activation_type": "QUInt8",
+  "weight_type": "QInt8",
+  "test_samples_allowed_for_calibration": false,
+  "status": "RESEARCH_PROTOCOL_VERSIONED_NOT_EXECUTED"
+}

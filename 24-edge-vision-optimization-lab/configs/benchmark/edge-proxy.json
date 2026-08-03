@@ -1,0 +1,7 @@
+{
+  "profile": "edge_proxy",
+  "description": "CPU-limited configuration; not a physical edge device.",
+  "threads": 1,
+  "batch_size": 1,
+  "status": "OPTIONAL_NOT_EXECUTED"
+}

@@ -235,7 +235,7 @@ Ejemplos:
 | 77-80  | `20-retail-shelf-object-detection`      | Detección densa, conteo visible, API y consola    |
 | 81-85  | `21-segmentation-quality-control-lab`   | Segmentación visual aplicada a control de calidad |
 | 86-89  | `22-document-vision-ocr-extractor`      | OCR, extracción estructurada y evidencia espacial |
-| 90-94  | `23-multimodal-image-text-assistant`    | Sistema simple imagen + texto                     |
+| 90-94  | `23-vision-language-search-assistant`   | Retrieval multimodal y asistente con evidencia    |
 | 95-99  | `24-edge-vision-optimization-lab`       | Optimización de modelos visuales para inferencia  |
 
 Duración total aproximada:
@@ -535,25 +535,27 @@ imagen o PDF de una página
 
 ---
 
-## 23 — multimodal-image-text-assistant
+## 23 — vision-language-search-assistant
 
 ### Objetivo
 
-Crear un asistente simple que combine imagen y texto.
+Construir un estudio de recuperación multimodal que busque imágenes mediante texto,
+otra imagen o refinamientos conversacionales trazables.
 
-Este proyecto introduce multimodalidad desde una versión controlada y pequeña.
+El producto conserva `image_id`, scores, captions y versiones de modelo/índice en cada
+resultado. La similitud se presenta como señal de ranking, no como verdad semántica.
 
 ---
 
 ### Flujo
 
 ```txt id="duybuv"
-imagen + pregunta
-→ análisis visual
-→ extracción de descripción
-→ prompt textual
-→ respuesta
-→ reporte de limitaciones
+texto o imagen
+→ encoder y captions versionados
+→ búsqueda exacta o aproximada
+→ fusión lexical + semántica
+→ resultados con evidencia
+→ refinamiento conversacional tipado
 ```
 
 ---
@@ -608,22 +610,24 @@ imagen + pregunta
 
 ### Objetivo
 
-Optimizar un modelo visual para inferencia más ligera.
+Construir una consola reproducible para comparar calidad, latencia, tamaño, sparsity y parity
+entre variantes FP32, pruning, ONNX e INT8 bajo un mismo contrato de CPU.
 
-Este proyecto cierra el Plan 4 conectando visión con eficiencia, latencia y despliegue en entornos limitados.
+Este proyecto cierra el Plan 4 con una política Pareto y recomendaciones condicionadas, sin
+inventar hardware edge ni tratar una exportación exitosa como optimización demostrada.
 
 ---
 
 ### Flujo
 
 ```txt id="x6m38a"
-modelo visual
-→ baseline inference
-→ medición de latencia
-→ optimización
-→ modelo ligero
-→ comparación
-→ reporte edge
+dataset y baseline propios
+→ variantes versionadas
+→ calidad recalculada
+→ benchmark emparejado
+→ parity y resultados negativos
+→ frontera Pareto
+→ registry + API + consola
 ```
 
 ---
@@ -634,10 +638,10 @@ modelo visual
 * Latency.
 * Throughput.
 * Model size.
-* Quantization conceptual.
-* Pruning conceptual.
-* ONNX conceptual.
-* MobileNet.
+* PTQ/QAT y calibration contracts.
+* Pruning estructurado y no estructurado.
+* ONNX export y runtime parity.
+* MobileNetV3-Small.
 * Efficient inference.
 * Trade-off precisión vs velocidad.
 * Deployment constraints.
@@ -646,12 +650,12 @@ modelo visual
 
 ### Módulos
 
-* Inference Baseline.
-* Latency Measurement.
-* Model Size Analysis.
-* Lightweight Model Comparison.
-* Quantization Concept.
-* Edge Readiness Report.
+* Dataset, baseline y test protocol.
+* Benchmark harness y environment manifest.
+* Pruning y recuperación de calidad.
+* ONNX, PTQ y parity.
+* Pareto y deployment policy.
+* Variant Registry, FastAPI y Benchmark Console.
 
 ---
 
@@ -668,13 +672,12 @@ modelo visual
 
 ### Entregable final
 
-* Modelo visual base.
-* Medición de latencia.
-* Comparación con modelo ligero.
-* Reporte de tamaño del modelo.
-* Optimización conceptual.
-* README técnico.
-* Conclusión sobre trade-offs de edge AI.
+* Contratos reproducibles de MobileNetV3, pruning, ONNX y PTQ.
+* Métricas de calidad y raw latency samples por variante.
+* Frontera Pareto derivada y deployment cards.
+* Variant Registry, API e interfaz React conectadas.
+* Docker y preparación para AWS App Runner.
+* Límites y estados NOT_RUN explícitos.
 
 ---
 
